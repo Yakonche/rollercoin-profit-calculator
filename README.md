@@ -1,5 +1,9 @@
 # rollercoin-profit-calculator
 
+Requirements :
+
+- Python 3.X (https://www.python.org/downloads/)
+
 French version :
 
 Calculateur qui permet de déterminer quelle cryptomonnaie est la plus rentable à "miner" sur le site rollercoin.com
