@@ -3,7 +3,7 @@
 import json
 import urllib.request
 
-current_hashrate = float(input("Votre hashrate (TH/s) : "))
+current_hashrate = float(input("Your hashrate (TH/s) : "))
 
 network_powers = [float(input("BTC network power (EH/s) : ")), float(input("DOGE network power (EH/s) : ")), float(input("ETH network power (EH/s) : "))]
 rewards = [0.00009, 240, 0.0017]
