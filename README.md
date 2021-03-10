@@ -1,8 +1,8 @@
-# rollercoin-profit-calculator
+# Rollercoin Profit Calculator
 
 Requirements :
 
-- Python 3.X (https://www.python.org/downloads/)
+- Python 3.X (https://www.python.org/downloads)
 
 French version :
 
@@ -12,7 +12,6 @@ Ce calculateur donnera également une estimation des revenus à chaques heure / 
 ![Screenshot_1980](https://user-images.githubusercontent.com/60564904/110414785-e4f77280-8090-11eb-8764-750a19ba7e2e.png)
 
 Source : https://gist.github.com/Bilaboz/56572e81ace7b47d4302d6f5840118aa
-Mon referral : https://rollercoin.com/?r=k2tlquen
 
 
 English version :
@@ -23,4 +22,3 @@ This calculator will also give an estimate of income at every hour / day / week 
 ![Screenshot_1981](https://user-images.githubusercontent.com/60564904/110415728-ac589880-8092-11eb-99d4-4f2851e12f4a.png)
 
 Source : https://gist.github.com/Bilaboz/56572e81ace7b47d4302d6f5840118aa
-My referral : https://rollercoin.com/?r=k2tlquen
