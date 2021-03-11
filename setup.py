@@ -5,8 +5,8 @@ executables = [
     Executable(
         "rc_profit_calc.py",
         base=None,
-        targetName="Rollercoin Profit Calculator.exe"
-        #icon="icon.ico"
+        targetName="Rollercoin Profit Calculator.exe",
+        icon="icon.ico"
     )
 ]
 
