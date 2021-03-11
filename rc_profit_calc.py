@@ -4,22 +4,26 @@ import json
 import urllib.request
 
 current_hashrate = float(input("\n Enter your hashrate (TH/s) : "))
-
+print("")
 network_powers = [
+    float(input(" Enter the BTC network power (EH/s) : ")),
+    float(input(" Enter the DOGE network power (EH/s) : ")),
+    float(input(" Enter the ETH network power (EH/s) : "))
+]
+rewards = [
     float(input(
-        "\n Enter the BTC network power (EH/s)\n"
+        "\n Enter the BTC reward\n"
         " Default value is 0.00009, just press Enter to validate this value : "
     ) or 0.00009),
     float(input(
-        "\n Enter the DOGE network power (EH/s)\n"
+        "\n Enter the DOGE reward\n"
         " Default value is 240, just press Enter to validate this value : "
     ) or 240.0),
     float(input(
-        "\n Enter the ETH network power (EH/s)\n"
+        "\n Enter the ETH reward\n"
         " Default value is 0.0017, just press Enter to validate this value : "
     ) or 0.0017)
 ]
-rewards = [0.00009, 240, 0.0017]
 names = ["BTC", "DOGE", "ETH"]
 
 r = urllib.request.urlopen(
@@ -72,4 +76,4 @@ print(" " + str(earnings_second*month) + " $ / month" + " ,or " +
 print(" " + str(earnings_second*year) + " $ / year" + " ,or " +
       str(earnings_cryptot*year) + " " + names[max_index])
 
-input("\n Press the Enter key to close the window.")
+input("\n Press the Enter key to close the window.\n")
