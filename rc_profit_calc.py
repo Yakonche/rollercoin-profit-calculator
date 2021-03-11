@@ -3,20 +3,20 @@
 import json
 import urllib.request
 
-current_hashrate = float(input("\nEnter your hashrate (TH/s) : "))
+current_hashrate = float(input("\n Enter your hashrate (TH/s) : "))
 
 network_powers = [
     float(input(
-        "\nEnter the BTC network power (EH/s)\n"
-        "Default value is 0.00009, just press Enter to validate this value : "
+        "\n Enter the BTC network power (EH/s)\n"
+        " Default value is 0.00009, just press Enter to validate this value : "
     ) or 0.00009),
     float(input(
-        "\nEnter the DOGE network power (EH/s)\n"
-        "(Default value is 240, just press Enter to validate this value : "
+        "\n Enter the DOGE network power (EH/s)\n"
+        " Default value is 240, just press Enter to validate this value : "
     ) or 240.0),
     float(input(
-        "\nEnter the ETH network power (EH/s)\n"
-        "Default value is 0.0017, just press Enter to validate this value : "
+        "\n Enter the ETH network power (EH/s)\n"
+        " Default value is 0.0017, just press Enter to validate this value : "
     ) or 0.0017)
 ]
 rewards = [0.00009, 240, 0.0017]
@@ -50,8 +50,8 @@ for i, (network_power, reward, price) in enumerate(
 max_index = earnings.index(max(earnings))
 
 print(
-    "\n ---------------------------\n\n{} is the most profitable "
-    "cryptocurrency to mine.\n{} $ of income per block.\nOr {} {} / block.\n"
+    "\n ---------------------------\n\n {} is the most profitable "
+    "cryptocurrency to mine.\n {} $ of income per block.\n Or {} {} / block.\n"
     .format(
         names[max_index], earnings[max_index], earnings_crypto[max_index],
         names[max_index]
@@ -60,16 +60,16 @@ print(
 
 earnings_second = earnings[max_index] / (5*minute)
 earnings_cryptot = earnings_crypto[max_index] / (5*minute)
-print("Is around :")
-print(str(earnings_second*hour) + " $ / hour" + " ,or " +
-      str(earnings_cryptot*hour) + " "+names[max_index])
-print(str(earnings_second*day) + " $ / day" + " ,or " +
+print(" Is around :")
+print(" " + str(earnings_second*hour) + " $ / hour" + " ,or " +
+      str(earnings_cryptot*hour) + " " + names[max_index])
+print(" " + str(earnings_second*day) + " $ / day" + " ,or " +
       str(earnings_cryptot*day) + " " + names[max_index])
-print(str(earnings_second*week) + " $ / week" + " ,or " +
+print(" " + str(earnings_second*week) + " $ / week" + " ,or " +
       str(earnings_cryptot*week) + " " + names[max_index])
-print(str(earnings_second*month) + " $ / month" + " ,or " +
+print(" " + str(earnings_second*month) + " $ / month" + " ,or " +
       str(earnings_cryptot*month) + " " + names[max_index])
-print(str(earnings_second*year) + " $ / year" + " ,or " +
+print(" " + str(earnings_second*year) + " $ / year" + " ,or " +
       str(earnings_cryptot*year) + " " + names[max_index])
 
-input("\nPress the Enter key to close the window.")
+input("\n Press the Enter key to close the window.")
