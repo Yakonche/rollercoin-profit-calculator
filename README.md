@@ -2,6 +2,8 @@
 
 <h1 align="center">Rollercoin Profit Calculator</h1>
 
+<p align="center">![GitHub repo size](https://img.shields.io/github/repo-size/yakonche/rollercoin-profit-calculator?style=flat-square) ![GitHub all releases](https://img.shields.io/github/downloads/yakonche/rollercoin-profit-calculator/total?style=flat-square) ![GitHub](https://img.shields.io/github/license/yakonche/rollercoin-profit-calculator?style=flat-square)</p>
+
 About
 -----
 
