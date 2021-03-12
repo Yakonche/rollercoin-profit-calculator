@@ -8,7 +8,7 @@ About
 Calculator that allows you to determine which cryptocurrency is the most profitable to "mine" on the rollercoin.com site
 This calculator will also give an estimate of income at every hour / day / week / month / year, based on the duration of a block (approximately 5 min)
 
-![Screenshot_2013](https://user-images.githubusercontent.com/60564904/110731687-14d67f80-8223-11eb-8d72-302484a6bca8.png)
+<p align="center"><img width=553 height=418 src="https://user-images.githubusercontent.com/60564904/110731687-14d67f80-8223-11eb-8d72-302484a6bca8.png"/></p>
 
 Running from Python sources
 ---------------------------
@@ -22,14 +22,18 @@ Running from Python sources
 ### Running
 
 `git clone https://github.com/yakonche/rollercoin-profit-calculator.git`
+
 `cd rollercoin-profit-calculator`
+
 `pip install -r requirements.txt`
+
 `python rc_profit_calc.py`  or just double click on autolaunchsoftware.bat
 
 Building
 --------
 
-You can build a binary release for distribution by double clicking on autobuild.bat or with the command : `python setup.py build`
+You can build a binary release for distribution by double clicking on autobuild.bat or with the command : 
+`python setup.py build`
 
 
 
