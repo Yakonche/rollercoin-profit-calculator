@@ -10,7 +10,7 @@ About
 Calculator that allows you to determine which cryptocurrency is the most profitable to "mine" on the rollercoin.com site
 This calculator will also give an estimate of income at every hour / day / week / month / year, based on the duration of a block (approximately 5 min)
 
-<p align="center"><img width=553 height=418 src="https://user-images.githubusercontent.com/60564904/110731687-14d67f80-8223-11eb-8d72-302484a6bca8.png"/></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/60564904/111032926-f7fe9f80-840e-11eb-8090-e61cdb20f08b.png"/></p>
 
 Downloads
 ---------
