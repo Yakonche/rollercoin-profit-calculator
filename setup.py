@@ -21,7 +21,7 @@ options = {
 setup(
     options=options,
     name="Rollercoin Profit Calculator",
-    version="0.0.3",
+    version="0.0.5",
     description="Calculator that allows you to determine which cryptocurrency "
                 "is the most profitable to mine on the rollercoin.com site",
     executables=executables
