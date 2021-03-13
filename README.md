@@ -12,6 +12,11 @@ This calculator will also give an estimate of income at every hour / day / week 
 
 <p align="center"><img width=553 height=418 src="https://user-images.githubusercontent.com/60564904/110731687-14d67f80-8223-11eb-8d72-302484a6bca8.png"/></p>
 
+Downloads
+---------
+
+[Release 0.0.5](https://github.com/Yakonche/rollercoin-profit-calculator/releases/download/0.0.5/rollercoin-profit-calculator.zip)
+
 Running from Python sources
 ---------------------------
 
