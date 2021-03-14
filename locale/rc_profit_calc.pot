@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Rollercoin Profit Calculator 0.0.5\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-03-14 01:24+0000\n"
+"POT-Creation-Date: 2021-03-14 09:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,65 +18,66 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
 
-#: rc_profit_calc.py:31
-msgid ""
-"\n"
-" Enter your hashrate (TH/s) : "
-msgstr ""
-
 #: rc_profit_calc.py:34
+msgid "usd"
+msgstr ""
+
+#: rc_profit_calc.py:35
+msgid "$"
+msgstr ""
+
+#: rc_profit_calc.py:82
 msgid ""
 "\n"
-" Enter the BTC network power (EH/s) : "
+"Enter your hashrate (TH/s): "
 msgstr ""
 
-#: rc_profit_calc.py:36
-msgid " Enter the DOGE network power (EH/s) : "
+#: rc_profit_calc.py:100
+msgid "Enter the {} network power (EH/s): "
 msgstr ""
 
-#: rc_profit_calc.py:38
-msgid " Enter the ETH network power (EH/s) : "
+#: rc_profit_calc.py:108
+msgid "Enter the {} reward [default - {}]: "
 msgstr ""
 
-#: rc_profit_calc.py:44
+#: rc_profit_calc.py:137
+msgid ""
+"{} is the most profitable cryptocurrency to mine.\n"
+"{:.2f}$ of income per block.\n"
+"Or {} {} per block.\n"
+msgstr ""
+
+#: rc_profit_calc.py:146
+msgid "hour"
+msgstr ""
+
+#: rc_profit_calc.py:146
+msgid "day"
+msgstr ""
+
+#: rc_profit_calc.py:146
+msgid "week"
+msgstr ""
+
+#: rc_profit_calc.py:146
+msgid "month"
+msgstr ""
+
+#: rc_profit_calc.py:146
+msgid "year"
+msgstr ""
+
+#: rc_profit_calc.py:150
+msgid "This is around:"
+msgstr ""
+
+#: rc_profit_calc.py:154
+msgid "{:.2f}{} per {}, or {} {}"
+msgstr ""
+
+#: rc_profit_calc.py:165
 msgid ""
 "\n"
-" Enter the BTC reward\n"
-" Default value is 0.00009, just press Enter to validate this value : "
-msgstr ""
-
-#: rc_profit_calc.py:48
-msgid ""
-"\n"
-" Enter the DOGE reward\n"
-" Default value is 240, just press Enter to validate this value : "
-msgstr ""
-
-#: rc_profit_calc.py:52
-msgid ""
-"\n"
-" Enter the ETH reward\n"
-" Default value is 0.0017, just press Enter to validate this value : "
-msgstr ""
-
-#: rc_profit_calc.py:90
-msgid ""
-" \"{}\" is the most profitable cryptocurrency to mine.\n"
-" \"{}\" $ of income per block.\n"
-" Or \"{}\" \"{}\" / block.\n"
-msgstr ""
-
-#: rc_profit_calc.py:101
-msgid " Is around :"
-msgstr ""
-
-#: rc_profit_calc.py:105
-msgid " {} $ / hour, or {} {}"
-msgstr ""
-
-#: rc_profit_calc.py:120
-msgid ""
-"\n"
-" Press the Enter key to close the window.\n"
+"Press the Enter key to close the window.\n"
 msgstr ""
 

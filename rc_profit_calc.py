@@ -75,7 +75,7 @@ def configure_language():
         'rc_profit_calc', 'locale', [langs[selected_lang]['code']]
     )
     lang.install()
-    os.environ['LANGUAGE'] = langs[selected_lang]['code']
+    os.environ['LANGUAGE'] = langs[selected_lang]['code'][:2]
 
 
 def main():

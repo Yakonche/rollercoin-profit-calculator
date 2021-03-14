@@ -1,16 +1,94 @@
 import os.path
 
+from distutils.cmd import Command
 from cx_Freeze import setup, Executable, build
 from babel.messages import frontend as babel
 
 
+WIN_NT = os.name == "nt"
+
+catalogs = [
+    "fr_FR",
+    "en_GB",
+    "en_US"
+]
+
+
+class CommandAdapter(Command):
+    user_options = []
+
+    def initialize_options(self):
+        pass
+
+    def finalize_options(self):
+        pass
+
+
+class InitAll(CommandAdapter):
+    description = "Initialise all translation catalogs"
+
+    def run(self):
+        for catalog in catalogs:
+            babel_ic = babel.init_catalog(self.distribution)
+            babel_ic.initialize_options()
+
+            babel_ic.locale = catalog
+            babel_ic.input_file = "locale/rc_profit_calc.pot"
+            babel_ic.output_dir = "locale"
+            babel_ic.output_file = "locale/{}/LC_MESSAGES/rc_profit_calc.po".format(catalog)
+
+            babel_ic.finalize_options()
+            babel_ic.run()
+
+
+class UpdateAll(CommandAdapter):
+    description = "Update all translation catalogs"
+
+    def run(self):
+        for catalog in catalogs:
+            babel_uc = babel.update_catalog(self.distribution)
+            babel_uc.initialize_options()
+
+            babel_uc.locale = catalog
+            babel_uc.input_file = "locale/rc_profit_calc.pot"
+            babel_uc.output_dir = "locale"
+            babel_uc.output_file = "locale/{}/LC_MESSAGES/rc_profit_calc.po".format(catalog)
+            
+            babel_uc.finalize_options()
+            babel_uc.run()
+
+
+class CompileAll(CommandAdapter):
+    description = "Compile all translation catalogs"
+
+    def run(self):
+        babel_cc = babel.compile_catalog(self.distribution)
+        babel_cc.domain = ["rc_profit_calc"]
+        babel_cc.directory = "./locale"
+        babel_cc.run()
+
+
 class BuildWithCompile(build):
     def run(self):
-        compiler = babel.compile_catalog(self.distribution)
-        compiler.domain = ["rc_profit_calc"]
-        compiler.directory = "./locale"
-        compiler.run()
+        babel_cc = babel.compile_catalog(self.distribution)
+        babel_cc.domain = ["rc_profit_calc"]
+        babel_cc.directory = "./locale"
+        babel_cc.run()
         super().run()
+
+
+class ExtractMessages(CommandAdapter):
+    description = "Extract translation messages"
+
+    def run(self):
+        babel_em = babel.extract_messages(self.distribution)
+        babel_em.initialize_options()
+
+        babel_em.input_dirs = "."
+        babel_em.output_file = "locale/rc_profit_calc.pot"
+
+        babel_em.finalize_options()
+        babel_em.run()
 
 
 def list_mo_files(folder, domain):
@@ -23,21 +101,18 @@ def list_mo_files(folder, domain):
 
 SRC_PATH = os.path.dirname(__file__)
 
-include_files = [
-    (os.path.join(SRC_PATH, './locale'), 'locale/'),
-]
-
+include_files = []
 for mo_file in list_mo_files("locale", "rc_profit_calc"):
     include_files.append(
         (os.path.join(SRC_PATH, mo_file), mo_file),
     )
 
-
+target_name = "Rollercoin Profit Calculator.exe" if WIN_NT else "rollercoin-profit-calculator"
 executables = [
     Executable(
         "rc_profit_calc.py",
         base=None,
-        targetName="Rollercoin Profit Calculator.exe",
+        targetName=target_name,
         icon="icon.ico"
     )
 ]
@@ -59,9 +134,9 @@ setup(
     executables=executables,
     cmdclass={
         'build': BuildWithCompile,
-        'compile_catalog': babel.compile_catalog,
-        'extract_messages': babel.extract_messages,
-        'init_catalog': babel.init_catalog,
-        'update_catalog': babel.update_catalog
+        'compile_catalogs': CompileAll,
+        'extract_messages': ExtractMessages,
+        'init_catalogs': InitAll,
+        'update_catalogs': UpdateAll
     }
 )
