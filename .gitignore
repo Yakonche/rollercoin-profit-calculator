@@ -1,1 +1,14 @@
+# Builds
 build/
+*.mo
+
+# Python
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Editors
+.*.swp
+.*.swo
+.idea/
