@@ -22,11 +22,52 @@ supported_locales = {
     'fr_FR': 'Français (FR)'
 }
 
+langs = [
+    {
+        "name": "English",
+        "code": "en_US",
+        "currency_sym": "$",
+        "currency_code": "usd"
+    },
+    {
+        "name": "English",
+        "code": "en_GB",
+        "currency_sym": "£",
+        "currency_code": "gbp"
+    },
+    {
+        "name": "Français",
+        "code": "fr_FR",
+        "currency_sym": "€",
+        "currency_code": "eur"
+    }
+]
+
+selected_lang = 0
+
+while True:
+    for idx, lang in enumerate(langs):
+        print(
+            "\t{}: {} ({})".format(idx + 1, lang['name'], lang['code'])
+        )
+    lang = input("\nSelect a language [default - 1]: ") or "1"
+    
+    try:
+        lang_idx = int(lang) - 1
+        if len(langs) > lang_idx >= 0:
+            selected_lang = lang_idx
+            break
+        else:
+            print("Invalid selection, try again\n")
+
+    except ValueError:
+        print("Please input a number, try again\n")
+
 lang = gettext.translation(
-    'rc_profit_calc', 'locale', ['en_US']
+    'rc_profit_calc', 'locale', [langs[selected_lang]['code']]
 )
 lang.install()
-os.environ['LANGUAGE'] = "en_US"
+os.environ['LANGUAGE'] = langs[selected_lang]['code']
 
 current_hashrate = float(input(_("\n Enter your hashrate (TH/s) : ")))
 
