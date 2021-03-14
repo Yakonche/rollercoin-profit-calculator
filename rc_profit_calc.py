@@ -16,7 +16,6 @@ gettext.textdomain('rc_profit_calc')
 gettext.install('rc_profit_calc', 'locale')
 _ = gettext.gettext
 
-
 langs = [
     {
         "name": "English",
@@ -38,17 +37,15 @@ ctx = decimal.Context()
 ctx.prec = 10
 
 minute = 60
-hour = minute*60
-day = hour*24
-week = day*7
-month = (365.25/12)*day
-year = month*12
-
+hour = minute * 60
+day = hour * 24
+week = day * 7
+month = (365.25 / 12) * day
+year = month * 12
 
 def float2str(f):
     d1 = ctx.create_decimal(repr(f))
     return format(d1, 'f')
-
 
 def configure_language():
     selected_lang = 0
@@ -58,7 +55,7 @@ def configure_language():
             print(
                 "\t{}: {} ({})".format(idx + 1, lang['name'], lang['code'])
             )
-        lang = input("\nSelect a language [default - 1]: ") or "1"
+        lang = input("\n Select a language [default - 1]: ") or "1"
 
         try:
             lang_idx = int(lang) - 1
@@ -66,10 +63,10 @@ def configure_language():
                 selected_lang = lang_idx
                 break
             else:
-                print("Invalid selection, try again\n")
+                print(" Invalid selection, try again\n")
 
         except ValueError:
-            print("Please input a number, try again\n")
+            print(" Please input a number, try again\n")
 
     lang = gettext.translation(
         'rc_profit_calc', 'locale', [langs[selected_lang]['code']]
@@ -77,9 +74,8 @@ def configure_language():
     lang.install()
     os.environ['LANGUAGE'] = langs[selected_lang]['code'][:2]
 
-
 def main():
-    current_hashrate = float(input(_("\nEnter your hashrate (TH/s): ")))
+    current_hashrate = float(input(_("\n Enter your hashrate (TH/s) : ")))
     current_hashrate /= 1000000
 
     names = [
@@ -97,14 +93,14 @@ def main():
     print()  # \n
     network_powers = [
         float(input(_(
-            "Enter the {} network power (EH/s): ".format(name)
+            " Enter the {} network power (EH/s) : ".format(name)
         ))) for name in names
     ]
 
     print()  # \n
     rewards = [
         float(input(_(
-            "Enter the {} reward [default - {}]: "
+            " Enter the {} reward [default - {}] : "
             .format(name, float2str(default))
         )) or default) for name, default in zip(names, default_rewards)
     ]
@@ -131,35 +127,34 @@ def main():
 
     max_index = earnings.index(max(earnings))
 
-    print("\n    ---------------------------\n")
+    print("\n   ---------------------------\n")
     print(_(
-        "{} is the most profitable cryptocurrency to mine.\n"
-        "{:.2f}" + fg(0, 255, 0) + "$" + fg.rs + " of income per block.\n"
-        "Or {} {} per block.\n"
+        " {} is the most profitable cryptocurrency to mine.\n"
+        " {:.2f} " + fg(0, 255, 0) + "{}" + fg.rs + " of income per block.\n"
+        " Or {} {} per block.\n"
         ).format(
-            names[max_index], earnings[max_index], earnings_crypto[max_index],
-            names[max_index]
+        names[max_index], earnings[max_index], currency_sym[max_index],
+        earnings_crypto[max_index], names[max_index]
         )
-    )
+        )
 
     periods = [hour, day, week, month, year]
     period_names = [_("hour"), _("day"), _("week"), _("month"), _("year")]
-    earnings_second = earnings[max_index] / (5*minute)
-    earnings_second_crypto = earnings_crypto[max_index] / (5*minute)
+    earnings_second = earnings[max_index] / (5 * minute)
+    earnings_second_crypto = earnings_crypto[max_index] / (5 * minute)
 
-    print(_("This is around:"))
+    print(_(" This is around :"))
 
     for period, period_name in zip(periods, period_names):
         print(
-            _("{:.2f}" + fg(0, 255, 0) + "{}" + fg.rs + " per {}, or {} {}")
+            _(" {:.2f} " + fg(0, 255, 0) + "{}" + fg.rs + " per {}, or {} {}")
             .format(
-                earnings_second*period, currency_sym, period_name,
-                earnings_second_crypto*period, names[max_index]
+                earnings_second * period, currency_sym, period_name,
+                earnings_second_crypto * period, names[max_index]
             )
         )
-
 
 if __name__ == "__main__":
     configure_language()
     main()
-    input(_("\nPress the Enter key to close the window.\n"))
+    input(_("\n Press the Enter key to close the window.\n"))

@@ -24,7 +24,7 @@ Running from Python sources
 
 * Python 3.7 - (https://www.python.org/downloads)
 * Pip - (https://bootstrap.pypa.io/get-pip.py) Save as then enter the following command : python get-pip.py
-* Python 3 dependencies - `pip3 install -r requirements.txt` or just double click on autoinstallrequirements.bat
+* Python 3 dependencies - `pip install -r requirements.txt` or just double click on autoinstallrequirements.bat
 
 ### Running
 
@@ -39,8 +39,22 @@ Running from Python sources
 Building
 --------
 
-You can build a binary release for distribution by double clicking on autobuild.bat or with the command : 
+You can build a binary release for distribution by double clicking on autobuild.bat or with the command :
+
 `python setup.py build`
+
+Translation
+-----------
+
+The relevant commands for managing the templates are :
+
+`python setup.py extract_messages` - Pulls all the target strings out of the codebase to produce `pot` file
+
+`python setup.py update_catalogs` - Updates the generated `po` files, use when strings change
+
+`python setup.py compile_catalogs` - Compiles just the translation files, yields `mo` files
+
+Additionally `python setup.py build` will now compile translations and copy them into the build.
 
 
 

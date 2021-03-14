@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Rollercoin Profit Calculator 0.0.5\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-03-14 09:23+0000\n"
+"POT-Creation-Date: 2021-03-14 14:53+0100\n"
 "PO-Revision-Date: 2021-03-14 09:24+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en_US\n"
@@ -17,68 +17,116 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.8.0\n"
+"Generated-By: Babel 2.9.0\n"
 
-#: rc_profit_calc.py:34
+#: rc_profit_calc.py:33
 msgid "usd"
 msgstr ""
 
-#: rc_profit_calc.py:35
+#: rc_profit_calc.py:34
 msgid "$"
 msgstr ""
 
-#: rc_profit_calc.py:82
+#: rc_profit_calc.py:78
 msgid ""
 "\n"
-"Enter your hashrate (TH/s): "
+" Enter your hashrate (TH/s) : "
 msgstr ""
 
-#: rc_profit_calc.py:100
-msgid "Enter the {} network power (EH/s): "
+#: rc_profit_calc.py:96
+msgid " Enter the {} network power (EH/s) : "
 msgstr ""
 
-#: rc_profit_calc.py:108
-msgid "Enter the {} reward [default - {}]: "
+#: rc_profit_calc.py:104
+msgid " Enter the {} reward [default - {}] : "
 msgstr ""
 
-#: rc_profit_calc.py:137
+#: rc_profit_calc.py:133
 msgid ""
-"{} is the most profitable cryptocurrency to mine.\n"
-"{:.2f}$ of income per block.\n"
-"Or {} {} per block.\n"
+" {} is the most profitable cryptocurrency to mine.\n"
+" {:.2f} {} of income per block.\n"
+" Or {} {} per block.\n"
 msgstr ""
 
-#: rc_profit_calc.py:146
+#: rc_profit_calc.py:142
 msgid "hour"
 msgstr ""
 
-#: rc_profit_calc.py:146
+#: rc_profit_calc.py:142
 msgid "day"
 msgstr ""
 
-#: rc_profit_calc.py:146
+#: rc_profit_calc.py:142
 msgid "week"
 msgstr ""
 
-#: rc_profit_calc.py:146
+#: rc_profit_calc.py:142
 msgid "month"
 msgstr ""
 
-#: rc_profit_calc.py:146
+#: rc_profit_calc.py:142
 msgid "year"
 msgstr ""
 
+#: rc_profit_calc.py:146
+msgid " This is around :"
+msgstr ""
+
 #: rc_profit_calc.py:150
-msgid "This is around:"
+msgid " {:.2f} {} per {}, or {} {}"
 msgstr ""
 
-#: rc_profit_calc.py:154
-msgid "{:.2f}{} per {}, or {} {}"
-msgstr ""
-
-#: rc_profit_calc.py:165
+#: rc_profit_calc.py:160
 msgid ""
 "\n"
-"Press the Enter key to close the window.\n"
+" Press the Enter key to close the window.\n"
 msgstr ""
+
+#~ msgid ""
+#~ "\n"
+#~ "Enter your hashrate (TH/s): "
+#~ msgstr ""
+
+#~ msgid "Enter the {} network power (EH/s): "
+#~ msgstr ""
+
+#~ msgid "Enter the {} reward [default - {}]: "
+#~ msgstr ""
+
+#~ msgid ""
+#~ "{} is the most profitable cryptocurrency to mine.\n"
+#~ "{:.2f}$ of income per block.\n"
+#~ "Or {} {} per block.\n"
+#~ msgstr ""
+
+#~ msgid "This is around:"
+#~ msgstr ""
+
+#~ msgid "{:.2f}{} per {}, or {} {}"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\n"
+#~ "Press the Enter key to close the window.\n"
+#~ msgstr ""
+
+#~ msgid ""
+#~ " {} is the most profitable cryptocurrency to mine.\n"
+#~ " {:.2f}{} of income per block.\n"
+#~ " Or {} {} per block.\n"
+#~ msgstr ""
+
+#~ msgid " {:.2f}{} per {}, or {} {}"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\n"
+#~ " Enter your hashrate (TH/s): "
+#~ msgstr ""
+
+#~ msgid " Enter the {} network power (EH/s): "
+#~ msgstr ""
+
+#~ msgid " Enter the {} reward [default - {}]: "
+#~ msgstr ""
 
