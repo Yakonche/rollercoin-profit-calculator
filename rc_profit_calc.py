@@ -16,6 +16,8 @@ gettext.textdomain('rc_profit_calc')
 gettext.install('rc_profit_calc', 'locale')
 _ = gettext.gettext
 
+print("")
+
 langs = [
     {
         "name": "English",
@@ -99,9 +101,8 @@ def main():
 
     print()  # \n
     rewards = [
-        float(input(_(
-            " Enter the {} reward [default - {}] : "
-            .format(name, float2str(default))
+        float(input(_((" Enter the {} reward [default - {}] : ")
+        .format(name, float2str(default))
         )) or default) for name, default in zip(names, default_rewards)
     ]
 
@@ -133,7 +134,7 @@ def main():
         " {:.2f} " + fg(0, 255, 0) + "{}" + fg.rs + " of income per block.\n"
         " Or {} {} per block.\n"
         ).format(
-        names[max_index], earnings[max_index], currency_sym[max_index],
+        names[max_index], earnings[max_index], currency_sym,
         earnings_crypto[max_index], names[max_index]
         )
         )
@@ -157,4 +158,4 @@ def main():
 if __name__ == "__main__":
     configure_language()
     main()
-    input(_("\n Press the Enter key to close the window.\n"))
+    input(_("\n Press the Enter key to close the window.\n "))

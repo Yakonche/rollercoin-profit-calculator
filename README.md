@@ -24,7 +24,7 @@ Running from Python sources
 
 * Python 3.7 - (https://www.python.org/downloads)
 * Pip - (https://bootstrap.pypa.io/get-pip.py) Save as then enter the following command : python get-pip.py
-* Python 3 dependencies - `pip install -r requirements.txt` or just double click on autoinstallrequirements.bat
+* Python 3 dependencies - `pip install -r requirements.txt`
 
 ### Running
 
@@ -34,12 +34,12 @@ Running from Python sources
 
 `pip install -r requirements.txt`
 
-`python rc_profit_calc.py`  or just double click on autolaunchsoftware.bat
+`python rc_profit_calc.py`
 
 Building
 --------
 
-You can build a binary release for distribution by double clicking on autobuild.bat or with the command :
+You can build a binary release for distribution with the command :
 
 `python setup.py build`
 

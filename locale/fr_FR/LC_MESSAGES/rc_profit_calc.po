@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Rollercoin Profit Calculator 0.1.0\n"
 "Report-Msgid-Bugs-To: yakonche@gmail.com\n"
-"POT-Creation-Date: 2021-03-14 14:53+0100\n"
+"POT-Creation-Date: 2021-03-15 00:19+0100\n"
 "PO-Revision-Date: 2021-03-14 09:24+0000\n"
 "Last-Translator: Yakonche <yakonche@gmail.com>\n"
 "Language: fr_FR\n"
@@ -19,15 +19,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.0\n"
 
-#: rc_profit_calc.py:33
+#: rc_profit_calc.py:35
 msgid "usd"
 msgstr "eur"
 
-#: rc_profit_calc.py:34
+#: rc_profit_calc.py:36
 msgid "$"
 msgstr "€"
 
-#: rc_profit_calc.py:78
+#: rc_profit_calc.py:80
 msgid ""
 "\n"
 " Enter your hashrate (TH/s) : "
@@ -35,15 +35,11 @@ msgstr ""
 "\n"
 " Entrez votre hashrate (TH/s) : "
 
-#: rc_profit_calc.py:96
+#: rc_profit_calc.py:98
 msgid " Enter the {} network power (EH/s) : "
 msgstr " Entrez la puissance du réseau {} (EH/s) : "
 
-#: rc_profit_calc.py:104
-msgid " Enter the {} reward [default - {}] : "
-msgstr " Entrez la récompense pour le {} [défaut - {}] : "
-
-#: rc_profit_calc.py:133
+#: rc_profit_calc.py:134
 msgid ""
 " {} is the most profitable cryptocurrency to mine.\n"
 " {:.2f} {} of income per block.\n"
@@ -53,38 +49,47 @@ msgstr ""
 " Soit {:.2f} {} de revenu par bloc.\n"
 " Ou {} {} par bloc.\n"
 
-#: rc_profit_calc.py:142
+#: rc_profit_calc.py:143
 msgid "hour"
 msgstr "heure"
 
-#: rc_profit_calc.py:142
+#: rc_profit_calc.py:143
 msgid "day"
 msgstr "jour"
 
-#: rc_profit_calc.py:142
+#: rc_profit_calc.py:143
 msgid "week"
 msgstr "semaine"
 
-#: rc_profit_calc.py:142
+#: rc_profit_calc.py:143
 msgid "month"
 msgstr "mois"
 
-#: rc_profit_calc.py:142
+#: rc_profit_calc.py:143
 msgid "year"
 msgstr "an"
 
-#: rc_profit_calc.py:146
-msgid " Ce qui donne environ :"
+#: rc_profit_calc.py:147
+msgid " This is around :"
 msgstr ""
 
-#: rc_profit_calc.py:150
+#: rc_profit_calc.py:151
 msgid " {:.2f} {} per {}, or {} {}"
 msgstr " {:.2f} {} par {}, ou {} {}"
 
-#: rc_profit_calc.py:160
+#: rc_profit_calc.py:161
+#, fuzzy
 msgid ""
 "\n"
 " Press the Enter key to close the window.\n"
+" "
 msgstr ""
 "\n"
 " Appuyez sur la touche Entrée pour fermer la fenêtre.\n"
+
+#~ msgid " Enter the {} reward [default - {}] : "
+#~ msgstr " Entrez la récompense pour le {} [défaut - {}] : "
+
+#~ msgid " Ce qui donne environ :"
+#~ msgstr ""
+
