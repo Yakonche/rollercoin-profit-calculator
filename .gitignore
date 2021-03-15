@@ -1,3 +1,6 @@
+# Batchs
+*.bat
+
 # Builds
 build/
 *.mo
@@ -12,6 +15,3 @@ __pycache__/
 .*.swp
 .*.swo
 .idea/
-
-# Batchs
-*.bat
