@@ -1,1 +1,0 @@
-python setup.py extract_messages update_catalogs compile_catalogs
