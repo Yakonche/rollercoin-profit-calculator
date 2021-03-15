@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Rollercoin Profit Calculator 0.1.0\n"
 "Report-Msgid-Bugs-To: yakonche@gmail.com\n"
-"POT-Creation-Date: 2021-03-15 00:19+0100\n"
+"POT-Creation-Date: 2021-03-15 01:00+0100\n"
 "PO-Revision-Date: 2021-03-14 09:24+0000\n"
 "Last-Translator: Yakonche <yakonche@gmail.com>\n"
 "Language: fr_FR\n"
@@ -19,15 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.0\n"
 
-#: rc_profit_calc.py:35
-msgid "usd"
-msgstr "eur"
-
-#: rc_profit_calc.py:36
-msgid "$"
-msgstr "€"
-
-#: rc_profit_calc.py:80
+#: rc_profit_calc.py:78
 msgid ""
 "\n"
 " Enter your hashrate (TH/s) : "
@@ -35,11 +27,23 @@ msgstr ""
 "\n"
 " Entrez votre hashrate (TH/s) : "
 
+#: rc_profit_calc.py:80
+msgid "usd"
+msgstr "eur"
+
+#: rc_profit_calc.py:81
+msgid "$"
+msgstr "€"
+
 #: rc_profit_calc.py:98
 msgid " Enter the {} network power (EH/s) : "
 msgstr " Entrez la puissance du réseau {} (EH/s) : "
 
-#: rc_profit_calc.py:134
+#: rc_profit_calc.py:105
+msgid " Enter the {} reward [default - {}] : "
+msgstr ""
+
+#: rc_profit_calc.py:135
 msgid ""
 " {} is the most profitable cryptocurrency to mine.\n"
 " {:.2f} {} of income per block.\n"
@@ -49,35 +53,35 @@ msgstr ""
 " Soit {:.2f} {} de revenu par bloc.\n"
 " Ou {} {} par bloc.\n"
 
-#: rc_profit_calc.py:143
+#: rc_profit_calc.py:144
 msgid "hour"
 msgstr "heure"
 
-#: rc_profit_calc.py:143
+#: rc_profit_calc.py:144
 msgid "day"
 msgstr "jour"
 
-#: rc_profit_calc.py:143
+#: rc_profit_calc.py:144
 msgid "week"
 msgstr "semaine"
 
-#: rc_profit_calc.py:143
+#: rc_profit_calc.py:144
 msgid "month"
 msgstr "mois"
 
-#: rc_profit_calc.py:143
+#: rc_profit_calc.py:144
 msgid "year"
 msgstr "an"
 
-#: rc_profit_calc.py:147
+#: rc_profit_calc.py:148
 msgid " This is around :"
 msgstr ""
 
-#: rc_profit_calc.py:151
+#: rc_profit_calc.py:152
 msgid " {:.2f} {} per {}, or {} {}"
 msgstr " {:.2f} {} par {}, ou {} {}"
 
-#: rc_profit_calc.py:161
+#: rc_profit_calc.py:162
 #, fuzzy
 msgid ""
 "\n"

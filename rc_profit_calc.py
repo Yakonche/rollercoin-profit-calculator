@@ -32,8 +32,6 @@ langs = [
         "code": "fr_FR"
     }
 ]
-currency_code = _("usd")
-currency_sym = _("$")
 
 ctx = decimal.Context()
 ctx.prec = 10
@@ -57,7 +55,7 @@ def configure_language():
             print(
                 "\t{}: {} ({})".format(idx + 1, lang['name'], lang['code'])
             )
-        lang = input("\n Select a language [default - 1]: ") or "1"
+        lang = input("\n Select a language [default - 1] : ") or "1"
 
         try:
             lang_idx = int(lang) - 1
@@ -79,6 +77,8 @@ def configure_language():
 def main():
     current_hashrate = float(input(_("\n Enter your hashrate (TH/s) : ")))
     current_hashrate /= 1000000
+    currency_code = _("usd")
+    currency_sym = _("$")
 
     names = [
         fg(255, 128,  10) + "BTC" + fg.rs,
@@ -94,16 +94,17 @@ def main():
 
     print()  # \n
     network_powers = [
-        float(input(_(
-            " Enter the {} network power (EH/s) : ".format(name)
-        ))) for name in names
-    ]
+    float(input(
+        _(" Enter the {} network power (EH/s) : ").format(name)
+    )) for name in names
+]
 
     print()  # \n
     rewards = [
-        float(input(_((" Enter the {} reward [default - {}] : ")
-        .format(name, float2str(default))
-        )) or default) for name, default in zip(names, default_rewards)
+        float(input(
+        _(" Enter the {} reward [default - {}] : ")
+        .format(name, float2str(default))) or default)
+        for name, default in zip(names, default_rewards)
     ]
 
     r = urllib.request.urlopen(
