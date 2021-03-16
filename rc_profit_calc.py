@@ -129,14 +129,13 @@ def main():
 
     max_index = earnings.index(max(earnings))
 
-    print("\n   ---------------------------\n")
+    print("\n  --------------------------------------------\n")
     print(_(
         " {} is the most profitable cryptocurrency to mine.\n"
-        " {:.2f} " + fg(0, 255, 0) + "{}" + fg.rs + " of income per block.\n"
-        " Or {} {} per block.\n"
+        " {:.2f} {} of income per block.\n Or {} {} per block.\n"
         ).format(
-        names[max_index], earnings[max_index], currency_sym,
-        earnings_crypto[max_index], names[max_index]
+        names[max_index], earnings[max_index], fg(0, 255, 0) + currency_sym
+        + fg.rs, earnings_crypto[max_index], names[max_index]
         )
         )
 
@@ -149,10 +148,10 @@ def main():
 
     for period, period_name in zip(periods, period_names):
         print(
-            _(" {:.2f} " + fg(0, 255, 0) + "{}" + fg.rs + " per {}, or {} {}")
+            _(" {:.2f} {} per {}, or {} {}")
             .format(
-                earnings_second * period, currency_sym, period_name,
-                earnings_second_crypto * period, names[max_index]
+                earnings_second * period, fg(0, 255, 0) + currency_sym + fg.rs,
+                period_name, earnings_second_crypto * period, names[max_index]
             )
         )
 
