@@ -20,16 +20,80 @@ print("")
 
 langs = [
     {
-        "name": "English",
+        "name": " English    (United States) ",
         "code": "en_US"
     },
     {
-        "name": "English",
+        "name": " English    (Britain)       ",
         "code": "en_GB"
     },
     {
-        "name": "Français",
+        "name": " English    (Canada)        ",
+        "code": "en_CA"
+    },
+    {
+        "name": " English    (Australia)     ",
+        "code": "en_AU"
+    },
+    {
+        "name": " English    (New Zealand)   ",
+        "code": "en_NZ"
+    },
+    {
+        "name": " Français   (France)        ",
         "code": "fr_FR"
+    },
+    {
+        "name": " Français   (Suisse)        ",
+        "code": "fr_CH"
+    },
+    {
+        "name": " Français   (Canada)        ",
+        "code": "fr_CA"
+    },
+    {
+        "name": " Deutsche   (Deutsche)      ",
+        "code": "de_DE"
+    },
+    {
+        "name": "Español    (España)        ",
+        "code": "es_ES"
+    },
+    {
+        "name": "Español    (México)        ",
+        "code": "es_MX"
+    },
+    {
+        "name": "Español    (Venezuela)     ",
+        "code": "es_VE"
+    },
+    {
+        "name": "Español    (Argentina)     ",
+        "code": "es_AR"
+    },
+    {
+        "name": "Polski     (Polska)        ",
+        "code": "pl_PL"
+    },
+    {
+        "name": "Português  (Portugal)      ",
+        "code": "pt_PT"
+    },
+    {
+        "name": "Português  (Brasil)        ",
+        "code": "pt_BR"
+    },
+    {
+        "name": "Türk       (Türkiye)       ",
+        "code": "tr_TR"
+    },
+    {
+        "name": "Pусский    (Россия)        ",
+        "code": "ru_RU"
+    },
+    {
+        "name": "Pilipino   (Pilipinas)     ",
+        "code": "fil_PH"
     }
 ]
 
@@ -158,4 +222,4 @@ def main():
 if __name__ == "__main__":
     configure_language()
     main()
-    input(_("\n Press the Enter key to close the window.\n "))
+    input(_("\n Press the Enter key to close the window. "))

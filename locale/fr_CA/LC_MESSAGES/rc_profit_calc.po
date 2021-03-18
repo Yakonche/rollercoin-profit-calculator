@@ -1,4 +1,4 @@
-# English (United States) translations for Rollercoin Profit Calculator.
+# French (Canada) translations for Rollercoin Profit Calculator.
 # Copyright (C) 2021 ORGANIZATION
 # This file is distributed under the same license as the Rollercoin Profit
 # Calculator project.
@@ -11,9 +11,9 @@ msgstr ""
 "POT-Creation-Date: 2021-03-18 07:53+0100\n"
 "PO-Revision-Date: 2021-03-18 07:51+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: en_US\n"
-"Language-Team: en_US <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Language: fr_CA\n"
+"Language-Team: fr_CA <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,10 +24,12 @@ msgid ""
 "\n"
 " Enter your hashrate (TH/s) : "
 msgstr ""
+"\n"
+" Entrez votre hashrate (TH/s) : "
 
 #: rc_profit_calc.py:144
 msgid "usd"
-msgstr ""
+msgstr "cad"
 
 #: rc_profit_calc.py:145
 msgid "$"
@@ -35,11 +37,11 @@ msgstr ""
 
 #: rc_profit_calc.py:162
 msgid " Enter the {} network power (EH/s) : "
-msgstr ""
+msgstr " Entrez la puissance du réseau {} (EH/s) : "
 
 #: rc_profit_calc.py:169
 msgid " Enter the {} reward [default - {}] : "
-msgstr ""
+msgstr " Entrez la récompense en {} [défaut - {}] : "
 
 #: rc_profit_calc.py:197
 msgid ""
@@ -47,38 +49,42 @@ msgid ""
 " {:.2f} {} of income per block.\n"
 " Or {} {} per block.\n"
 msgstr ""
+" {} est la crypto-monnaie la plus rentable à exploiter.\n"
+" Soit {:.2f} {} de revenu par bloc.\n"
+" Ou {} {} par bloc.\n"
 
 #: rc_profit_calc.py:207
 msgid "hour"
-msgstr ""
+msgstr "heure"
 
 #: rc_profit_calc.py:207
 msgid "day"
-msgstr ""
+msgstr "jour"
 
 #: rc_profit_calc.py:207
 msgid "week"
-msgstr ""
+msgstr "semaine"
 
 #: rc_profit_calc.py:207
 msgid "month"
-msgstr ""
+msgstr "mois"
 
 #: rc_profit_calc.py:207
 msgid "year"
-msgstr ""
+msgstr "an"
 
 #: rc_profit_calc.py:211
 msgid " This is around :"
-msgstr ""
+msgstr " Soit environ :"
 
 #: rc_profit_calc.py:215
 msgid " {:.2f} {} per {}, or {} {}"
-msgstr ""
+msgstr " {:.2f} {} par {}, ou {} {}"
 
 #: rc_profit_calc.py:225
 msgid ""
 "\n"
 " Press the Enter key to close the window. "
 msgstr ""
-
+"\n"
+" Appuyez sur la touche Entrée pour fermer la fenêtre. "

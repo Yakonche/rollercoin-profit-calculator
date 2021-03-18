@@ -6,11 +6,11 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Rollercoin Profit Calculator 0.1.0\n"
-"Report-Msgid-Bugs-To: yakonche@gmail.com\n"
-"POT-Creation-Date: 2021-03-16 03:42+0100\n"
-"PO-Revision-Date: 2021-03-14 09:24+0000\n"
-"Last-Translator: Yakonche <yakonche@gmail.com>\n"
+"Project-Id-Version: Rollercoin Profit Calculator 0.1.2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2021-03-18 07:53+0100\n"
+"PO-Revision-Date: 2021-03-18 07:51+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr_FR\n"
 "Language-Team: fr_FR <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n > 1)\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.0\n"
 
-#: rc_profit_calc.py:78
+#: rc_profit_calc.py:142
 msgid ""
 "\n"
 " Enter your hashrate (TH/s) : "
@@ -27,23 +27,23 @@ msgstr ""
 "\n"
 " Entrez votre hashrate (TH/s) : "
 
-#: rc_profit_calc.py:80
+#: rc_profit_calc.py:144
 msgid "usd"
 msgstr "eur"
 
-#: rc_profit_calc.py:81
+#: rc_profit_calc.py:145
 msgid "$"
 msgstr "€"
 
-#: rc_profit_calc.py:98
+#: rc_profit_calc.py:162
 msgid " Enter the {} network power (EH/s) : "
 msgstr " Entrez la puissance du réseau {} (EH/s) : "
 
-#: rc_profit_calc.py:105
+#: rc_profit_calc.py:169
 msgid " Enter the {} reward [default - {}] : "
 msgstr " Entrez la récompense en {} [défaut - {}] : "
 
-#: rc_profit_calc.py:133
+#: rc_profit_calc.py:197
 msgid ""
 " {} is the most profitable cryptocurrency to mine.\n"
 " {:.2f} {} of income per block.\n"
@@ -53,41 +53,38 @@ msgstr ""
 " Soit {:.2f} {} de revenu par bloc.\n"
 " Ou {} {} par bloc.\n"
 
-#: rc_profit_calc.py:143
+#: rc_profit_calc.py:207
 msgid "hour"
 msgstr "heure"
 
-#: rc_profit_calc.py:143
+#: rc_profit_calc.py:207
 msgid "day"
 msgstr "jour"
 
-#: rc_profit_calc.py:143
+#: rc_profit_calc.py:207
 msgid "week"
 msgstr "semaine"
 
-#: rc_profit_calc.py:143
+#: rc_profit_calc.py:207
 msgid "month"
 msgstr "mois"
 
-#: rc_profit_calc.py:143
+#: rc_profit_calc.py:207
 msgid "year"
 msgstr "an"
 
-#: rc_profit_calc.py:147
+#: rc_profit_calc.py:211
 msgid " This is around :"
 msgstr " Soit environ :"
 
-#: rc_profit_calc.py:151
+#: rc_profit_calc.py:215
 msgid " {:.2f} {} per {}, or {} {}"
 msgstr " {:.2f} {} par {}, ou {} {}"
 
-#: rc_profit_calc.py:161
+#: rc_profit_calc.py:225
 msgid ""
 "\n"
-" Press the Enter key to close the window.\n"
-" "
+" Press the Enter key to close the window. "
 msgstr ""
 "\n"
-" Appuyez sur la touche Entrée pour fermer la fenêtre.\n"
-" "
-
+" Appuyez sur la touche Entrée pour fermer la fenêtre. "

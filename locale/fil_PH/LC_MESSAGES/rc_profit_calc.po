@@ -1,4 +1,4 @@
-# English (United States) translations for Rollercoin Profit Calculator.
+# Filipino (Philippines) translations for Rollercoin Profit Calculator.
 # Copyright (C) 2021 ORGANIZATION
 # This file is distributed under the same license as the Rollercoin Profit
 # Calculator project.
@@ -11,8 +11,8 @@ msgstr ""
 "POT-Creation-Date: 2021-03-18 07:53+0100\n"
 "PO-Revision-Date: 2021-03-18 07:51+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: en_US\n"
-"Language-Team: en_US <LL@li.org>\n"
+"Language: fil_PH\n"
+"Language-Team: fil_PH <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -24,22 +24,24 @@ msgid ""
 "\n"
 " Enter your hashrate (TH/s) : "
 msgstr ""
+"\n"
+" Ipasok ang iyong hashrate (TH/s) : "
 
 #: rc_profit_calc.py:144
 msgid "usd"
-msgstr ""
+msgstr "php"
 
 #: rc_profit_calc.py:145
 msgid "$"
-msgstr ""
+msgstr "₱"
 
 #: rc_profit_calc.py:162
 msgid " Enter the {} network power (EH/s) : "
-msgstr ""
+msgstr " Ipasok ang lakas ng network ng {} (EH/s) : "
 
 #: rc_profit_calc.py:169
 msgid " Enter the {} reward [default - {}] : "
-msgstr ""
+msgstr " Ipasok ang gantimpala ng {} [default - {}] : "
 
 #: rc_profit_calc.py:197
 msgid ""
@@ -47,38 +49,42 @@ msgid ""
 " {:.2f} {} of income per block.\n"
 " Or {} {} per block.\n"
 msgstr ""
+" Ang {} ay ang pinaka-kumikitang cryptocurrency sa minahan.\n"
+" {:.2f} {} ng kita bawat bloke.\n"
+" O {} {} bawat bloke.\n"
 
 #: rc_profit_calc.py:207
 msgid "hour"
-msgstr ""
+msgstr "oras"
 
 #: rc_profit_calc.py:207
 msgid "day"
-msgstr ""
+msgstr "araw"
 
 #: rc_profit_calc.py:207
 msgid "week"
-msgstr ""
+msgstr "linggo"
 
 #: rc_profit_calc.py:207
 msgid "month"
-msgstr ""
+msgstr "buwan"
 
 #: rc_profit_calc.py:207
 msgid "year"
-msgstr ""
+msgstr "taon"
 
 #: rc_profit_calc.py:211
 msgid " This is around :"
-msgstr ""
+msgstr " Ay nasa paligid :"
 
 #: rc_profit_calc.py:215
 msgid " {:.2f} {} per {}, or {} {}"
-msgstr ""
+msgstr " {:.2f} {} bawat {}, o {} {}"
 
 #: rc_profit_calc.py:225
 msgid ""
 "\n"
 " Press the Enter key to close the window. "
 msgstr ""
-
+"\n"
+" Pindutin ang Enter key upang isara ang window. "

@@ -22,12 +22,6 @@
   <a href="https://github.com/Yakonche/rollercoin-profit-calculator/blob/master/README.md">
     <img alt="English" src="https://user-images.githubusercontent.com/60564904/111509126-b3477100-874c-11eb-9d87-0f484dfa3ff6.png">
   </a>
-  <a href="https://github.com/Yakonche/rollercoin-profit-calculator/blob/master/readmes/README-IL.md">
-    <img alt="Israel" src="https://user-images.githubusercontent.com/60564904/111509190-c4907d80-874c-11eb-85fd-9b3fe8e8632a.png">
-  </a>
-  <a href="https://github.com/Yakonche/rollercoin-profit-calculator/blob/master/readmes/README-NL.md">
-    <img alt="Dutch" src="https://user-images.githubusercontent.com/60564904/111509270-da05a780-874c-11eb-9b81-38ec888946dc.png">
-  </a>
   <a href="https://github.com/Yakonche/rollercoin-profit-calculator/blob/master/readmes/README-PH.md">
     <img alt="Philippines" src="https://user-images.githubusercontent.com/60564904/111509315-e427a600-874c-11eb-8e73-88d67a15c139.png">
   </a>

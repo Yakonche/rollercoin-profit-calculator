@@ -7,9 +7,9 @@ from babel.messages import frontend as babel
 WIN_NT = os.name == "nt"
 
 catalogs = [
-    "fr_FR",
-    "en_GB",
-    "en_US"
+    "en_US","en_GB","en_CA","en_AU","en_NZ","fr_FR","fr_CH","fr_CA","de_DE",
+    "es_ES","es_MX","es_VE","es_AR","fil_PH","pl_PL","pt_PT","pt_BR","tr_TR",
+    "ru_RU"
 ]
 
 class CommandAdapter(Command):
@@ -120,7 +120,7 @@ options = {
 setup(
     options=options,
     name="Rollercoin Profit Calculator",
-    version="0.1.0",
+    version="0.1.2",
     description="Calculator that allows you to determine which cryptocurrency "
                 "is the most profitable to mine on the rollercoin.com site",
     executables=executables,

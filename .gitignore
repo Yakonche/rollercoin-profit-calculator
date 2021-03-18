@@ -1,5 +1,6 @@
-# Batchs
+# Batchs & Text files
 *.bat
+*.txt
 
 # Builds
 build/
