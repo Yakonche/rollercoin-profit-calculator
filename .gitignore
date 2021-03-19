@@ -19,3 +19,6 @@ __pycache__/
 
 # Dists
 dist/
+
+# Egg
+Rollercoin_Profit_Calculator.egg-info/
