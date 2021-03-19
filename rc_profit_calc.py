@@ -136,7 +136,7 @@ def configure_language():
         'rc_profit_calc', 'locale', [langs[selected_lang]['code']]
     )
     lang.install()
-    os.environ['LANGUAGE'] = langs[selected_lang]['code'][:2]
+    os.environ['LANGUAGE'] = langs[selected_lang]['code']
 
 def main():
     current_hashrate = float(input(_("\n Enter your hashrate (TH/s) : ")))
@@ -145,9 +145,9 @@ def main():
     currency_sym = _("$")
 
     names = [
-        fg(255, 128,  10) + "BTC" + fg.rs,
+        fg(255, 128,  10) + "BTC"  + fg.rs,
         fg(255, 255,   0) + "DOGE" + fg.rs,
-        fg(127,   0, 255) + "ETH" + fg.rs
+        fg(127,   0, 255) + "ETH"  + fg.rs
     ]
 
     default_rewards = [
@@ -178,7 +178,7 @@ def main():
     )
     data = json.loads(r.read())
     prices = [
-        data["bitcoin"][currency_code],
+        data["bitcoin" ][currency_code],
         data["dogecoin"][currency_code],
         data["ethereum"][currency_code]
     ]

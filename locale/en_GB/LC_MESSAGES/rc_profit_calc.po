@@ -27,11 +27,11 @@ msgstr ""
 
 #: rc_profit_calc.py:144
 msgid "usd"
-msgstr ""
+msgstr "gbp"
 
 #: rc_profit_calc.py:145
 msgid "$"
-msgstr ""
+msgstr "£"
 
 #: rc_profit_calc.py:162
 msgid " Enter the {} network power (EH/s) : "
@@ -81,4 +81,3 @@ msgid ""
 "\n"
 " Press the Enter key to close the window. "
 msgstr ""
-
