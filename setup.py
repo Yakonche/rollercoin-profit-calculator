@@ -8,8 +8,8 @@ WIN_NT = os.name == "nt"
 
 catalogs = [
     "en_US","en_GB","en_CA","en_AU","en_NZ","fr_FR","fr_CH","fr_CA","de_DE",
-    "es_ES","es_MX","es_VE","es_AR","fil_PH","pl_PL","pt_PT","pt_BR","tr_TR",
-    "ru_RU"
+    "es_ES","es_MX","es_VE","es_AR","pl_PL","pt_PT","pt_BR","tr_TR","ru_RU",
+    "fil_PH"
 ]
 
 class CommandAdapter(Command):
