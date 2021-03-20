@@ -52,10 +52,11 @@ Dieser Rechner gibt auch eine Schätzung des Einkommens zu jeder Stunde / Tag / 
 Downloads
 ---------
 
-[Veröffentlichung 0.1.0](https://github.com/Yakonche/rollercoin-profit-calculator/releases/tag/0.1.0)
+[Veröffentlichung 0.1.2](https://github.com/Yakonche/rollercoin-profit-calculator/releases/tag/0.1.2)
 
 <details>
 <summary>Alte Veröffentlichungen</summary>
+* [Veröffentlichung 0.1.0](https://github.com/Yakonche/rollercoin-profit-calculator/releases/tag/0.1.0)
 * [Veröffentlichung 0.0.5](https://github.com/Yakonche/rollercoin-profit-calculator/releases/tag/0.0.5)
 </details>
 

@@ -52,10 +52,11 @@ Ang calculator na ito ay magbibigay din ng isang pagtatantya ng kita sa bawat or
 Mga Pag-download
 ----------------
 
-[Bersyon 0.1.0](https://github.com/Yakonche/rollercoin-profit-calculator/releases/tag/0.1.0)
+[Bersyon 0.1.2](https://github.com/Yakonche/rollercoin-profit-calculator/releases/tag/0.1.2)
 
 <details>
 <summary>Mga Lumang Bersyon</summary>
+* [Bersyon 0.1.0](https://github.com/Yakonche/rollercoin-profit-calculator/releases/tag/0.1.0)
 * [Bersyon 0.0.5](https://github.com/Yakonche/rollercoin-profit-calculator/releases/tag/0.0.5)
 </details>
 

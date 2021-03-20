@@ -49,10 +49,12 @@ Bu hesap da bir blok (yaklaşık 5 dakika) süresine göre, her saat / gün / ha
 
 İndirilenler
 ------------
-[Sürüm 0.1.0](https://github.com/Yakonche/rollercoin-profit-calculator/releases/tag/0.1.0)
+
+[Sürüm 0.1.2](https://github.com/Yakonche/rollercoin-profit-calculator/releases/tag/0.1.2)
 
 <details>
 <summary>Eski sürümler</summary>
+* [Sürüm 0.1.0](https://github.com/Yakonche/rollercoin-profit-calculator/releases/tag/0.1.0)
 * [Sürüm 0.0.5](https://github.com/Yakonche/rollercoin-profit-calculator/releases/tag/0.0.5)
 </details>
 

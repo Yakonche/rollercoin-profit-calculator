@@ -52,10 +52,11 @@ Esta calculadora também fornecerá uma estimativa da renda a cada hora / dia / 
 Transferências
 --------------
 
-[Versão 0.1.0](https://github.com/Yakonche/rollercoin-profit-calculator/releases/tag/0.1.0)
+[Versão 0.1.2](https://github.com/Yakonche/rollercoin-profit-calculator/releases/tag/0.1.2)
 
 <details>
 <summary>Versões antigas</summary>
+* [Versão 0.1.0](https://github.com/Yakonche/rollercoin-profit-calculator/releases/tag/0.1.0)
 * [Versão 0.0.5](https://github.com/Yakonche/rollercoin-profit-calculator/releases/tag/0.0.5)
 </details>
 

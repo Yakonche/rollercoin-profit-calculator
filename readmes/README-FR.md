@@ -50,11 +50,12 @@ Ce calculateur donnera également une estimation du revenu à chaque heure / jou
 Téléchargements
 ---------------
 
-[Release 0.1.0](https://github.com/Yakonche/rollercoin-profit-calculator/releases/tag/0.1.0)
+[Version 0.1.2](https://github.com/Yakonche/rollercoin-profit-calculator/releases/tag/0.1.2)
 
 <details>
-<summary>Old releases</summary>
-* [Release 0.0.5](https://github.com/Yakonche/rollercoin-profit-calculator/releases/tag/0.0.5)
+<summary>Anciennes versions</summary>
+* [Version 0.1.0](https://github.com/Yakonche/rollercoin-profit-calculator/releases/tag/0.1.0)
+* [Version 0.0.5](https://github.com/Yakonche/rollercoin-profit-calculator/releases/tag/0.0.5)
 </details>
 
 Exécution à partir des sources Python
