@@ -54,6 +54,7 @@ Downloads
 
 <details>
 <summary>Old releases</summary>
+	
 * [Release 0.1.0](https://github.com/Yakonche/rollercoin-profit-calculator/releases/tag/0.1.0)
 * [Release 0.0.5](https://github.com/Yakonche/rollercoin-profit-calculator/releases/tag/0.0.5)
 </details>
