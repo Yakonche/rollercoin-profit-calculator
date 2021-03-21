@@ -5,6 +5,7 @@ import urllib.request
 import os
 import sys
 import decimal
+import columnize
 
 from sty import fg
 if sys.platform == "win32":
@@ -16,86 +17,9 @@ gettext.textdomain('rc_profit_calc')
 gettext.install('rc_profit_calc', 'locale')
 _ = gettext.gettext
 
-print("")
+from data import langs, currencies_fiat, currencies_crypto
 
-langs = [
-    {
-        "name": " English    (United States) ",
-        "code": "en_US"
-    },
-    {
-        "name": " English    (Britain)       ",
-        "code": "en_GB"
-    },
-    {
-        "name": " English    (Canada)        ",
-        "code": "en_CA"
-    },
-    {
-        "name": " English    (Australia)     ",
-        "code": "en_AU"
-    },
-    {
-        "name": " English    (New Zealand)   ",
-        "code": "en_NZ"
-    },
-    {
-        "name": " Français   (France)        ",
-        "code": "fr_FR"
-    },
-    {
-        "name": " Français   (Suisse)        ",
-        "code": "fr_CH"
-    },
-    {
-        "name": " Français   (Canada)        ",
-        "code": "fr_CA"
-    },
-    {
-        "name": " Deutsche   (Deutsche)      ",
-        "code": "de_DE"
-    },
-    {
-        "name": "Español    (España)        ",
-        "code": "es_ES"
-    },
-    {
-        "name": "Español    (México)        ",
-        "code": "es_MX"
-    },
-    {
-        "name": "Español    (Venezuela)     ",
-        "code": "es_VE"
-    },
-    {
-        "name": "Español    (Argentina)     ",
-        "code": "es_AR"
-    },
-    {
-        "name": "Polski     (Polska)        ",
-        "code": "pl_PL"
-    },
-    {
-        "name": "Português  (Portugal)      ",
-        "code": "pt_PT"
-    },
-    {
-        "name": "Português  (Brasil)        ",
-        "code": "pt_BR"
-    },
-    {
-        "name": "Türk       (Türkiye)       ",
-        "code": "tr_TR"
-    },
-    {
-        "name": "Pусский    (Россия)        ",
-        "code": "ru_RU"
-    },
-    {
-        "name": "Pilipino   (Pilipinas)     ",
-        "code": "fil_PH"
-    }
-]
+print("")
 
 ctx = decimal.Context()
 ctx.prec = 10
@@ -138,10 +62,22 @@ def configure_language():
     lang.install()
     os.environ['LANGUAGE'] = langs[selected_lang]['code']
 
+def configure_currency():
+    selected_currency = None
+    print_("\n Fiat Currencies :\n")
+    while True:
+        for idx, currency in enumerate(currencies_fiat):
+            print(columnize.columnize(" - " + fg(255, 23, 42) + currency_code +
+            fg.rs + " : " + fg(13, 54, 255) + currency_name + fg.rs + " (" +
+            fg(64, 255, 23) + currency_sym + fg.rs + ") " + displaywidth=89 +
+            colsep=' | '))
+        currency = input("\n Select a currency [default - USD] : ") or "USD"
+
 def main():
     current_hashrate = float(input(_("\n Enter your hashrate (TH/s) : ")))
     current_hashrate /= 1000000
-    currency_code = _("usd")
+    currency_code = _("USD")
+    currency_name = _("United States Dollar")
     currency_sym = _("$")
 
     names = [
@@ -197,11 +133,8 @@ def main():
     print(_(
         " {} is the most profitable cryptocurrency to mine.\n"
         " {:.2f} {} of income per block.\n Or {} {} per block.\n"
-        ).format(
-        names[max_index], earnings[max_index], fg(0, 255, 0) + currency_sym
-        + fg.rs, earnings_crypto[max_index], names[max_index]
-        )
-        )
+        ).format(names[max_index], earnings[max_index], fg(0, 255, 0) +
+        currency_sym + fg.rs, earnings_crypto[max_index], names[max_index]))
 
     periods = [hour, day, week, month, year]
     period_names = [_("hour"), _("day"), _("week"), _("month"), _("year")]
@@ -221,5 +154,6 @@ def main():
 
 if __name__ == "__main__":
     configure_language()
+    configure_currency()
     main()
     input(_("\n Press the Enter key to close the window. "))
