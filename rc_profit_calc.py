@@ -37,9 +37,8 @@ def float2str(f):
     d1 = ctx.create_decimal(repr(f))
     return format(d1, 'f')
 
-def configure_language():
-    selected_lang = 0
 
+def configure_language():
     while True:
         for idx, lang in enumerate(langs):
             print(
@@ -64,15 +63,14 @@ def configure_language():
     lang.install()
     os.environ['LANGUAGE'] = langs[selected_lang]['code']
 
-def get_currency():
-    selected_currency = None
 
+def get_currency():
     options = [curr['code'] for curr in currencies_crypto + currencies_fiat]
 
     while True:
-        print("\nFiat currencies :")
+        print(_("\nFiat currencies :"))
         for idx, curr in enumerate(currencies_fiat):
-            cell_str = "{}: {} ({})".format(curr['code'], curr['name'], curr['sym'])
+            cell_str = _("{}: {} ({})").format(curr['code'], curr['name'], curr['sym'])
             cell_padding = int(console_width / 2 - len_display(cell_str.strip()))
 
             print(
@@ -82,9 +80,9 @@ def get_currency():
             if idx % 2:
                 print()  # \n
 
-        print("\nCrypto currencies :")
+        print(_("\nCrypto currencies :"))
         for idx, curr in enumerate(currencies_crypto):
-            cell_str = "{}: {} ({})".format(
+            cell_str = _("{}: {} ({})").format(
                 curr['code'].ljust(4, " "), curr['name'], curr['sym']
             )
             cell_padding = int(console_width / 2 - len_display(cell_str.strip()))
@@ -96,13 +94,14 @@ def get_currency():
             if idx % 2:
                 print()  # \n
 
-        selected_currency = input("\nSelect a currency [default - USD] : ") or "USD"
+        selected_currency = input(_("\nSelect a currency [default - USD] : ")) or "USD"
         if selected_currency not in options:
-            print("\nInvalid choice!\n")
+            print(_("\nInvalid currency!\n"))
             continue
         break
 
     return [curr for curr in currencies_crypto + currencies_fiat if curr['code'] == selected_currency][0]
+
 
 def main():
     configure_language()
