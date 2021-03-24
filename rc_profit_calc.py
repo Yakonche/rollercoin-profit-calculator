@@ -5,7 +5,6 @@ import urllib.request
 import os
 import sys
 import decimal
-import columnize
 
 from sty import fg
 if sys.platform == "win32":
@@ -18,6 +17,7 @@ gettext.install('rc_profit_calc', 'locale')
 _ = gettext.gettext
 
 from data import langs, currencies_fiat, currencies_crypto
+from utils import len_display
 
 print("")
 
@@ -30,6 +30,8 @@ day = hour * 24
 week = day * 7
 month = (365.25 / 12) * day
 year = month * 12
+
+console_width = 120
 
 def float2str(f):
     d1 = ctx.create_decimal(repr(f))
@@ -62,23 +64,52 @@ def configure_language():
     lang.install()
     os.environ['LANGUAGE'] = langs[selected_lang]['code']
 
-def configure_currency():
+def get_currency():
     selected_currency = None
-    print_("\n Fiat Currencies :\n")
+
+    options = [curr['code'] for curr in currencies_crypto + currencies_fiat]
+
     while True:
-        for idx, currency in enumerate(currencies_fiat):
-            print(columnize.columnize(" - " + fg(255, 23, 42) + currency_code +
-            fg.rs + " : " + fg(13, 54, 255) + currency_name + fg.rs + " (" +
-            fg(64, 255, 23) + currency_sym + fg.rs + ") " + displaywidth=89 +
-            colsep=' | '))
-        currency = input("\n Select a currency [default - USD] : ") or "USD"
+        print("\nFiat currencies :")
+        for idx, curr in enumerate(currencies_fiat):
+            cell_str = "{}: {} ({})".format(curr['code'], curr['name'], curr['sym'])
+            cell_padding = int(console_width / 2 - len_display(cell_str.strip()))
+
+            print(
+                cell_str.strip() + (" " * cell_padding),
+                end="" if idx != len(currencies_fiat) - 1 else "\n"
+            )
+            if idx % 2:
+                print()  # \n
+
+        print("\nCrypto currencies :")
+        for idx, curr in enumerate(currencies_crypto):
+            cell_str = "{}: {} ({})".format(
+                curr['code'].ljust(4, " "), curr['name'], curr['sym']
+            )
+            cell_padding = int(console_width / 2 - len_display(cell_str.strip()))
+
+            print(
+                cell_str.strip() + (" " * cell_padding),
+                end="" if idx != len(currencies_crypto) - 1 else "\n"
+            )
+            if idx % 2:
+                print()  # \n
+
+        selected_currency = input("\nSelect a currency [default - USD] : ") or "USD"
+        if selected_currency not in options:
+            print("\nInvalid choice!\n")
+            continue
+        break
+
+    return [curr for curr in currencies_crypto + currencies_fiat if curr['code'] == selected_currency][0]
 
 def main():
+    configure_language()
+    currency = get_currency()
+
     current_hashrate = float(input(_("\n Enter your hashrate (TH/s) : ")))
     current_hashrate /= 1000000
-    currency_code = _("USD")
-    currency_name = _("United States Dollar")
-    currency_sym = _("$")
 
     names = [
         fg(255, 128,  10) + "BTC"  + fg.rs,
@@ -110,13 +141,13 @@ def main():
     r = urllib.request.urlopen(
         "https://api.coingecko.com/api/v3/simple/price"
         "?ids=bitcoin%2Cdogecoin%2Cethereum&vs_currencies={}"
-        .format(currency_code)
+        .format(currency['code'])
     )
     data = json.loads(r.read())
     prices = [
-        data["bitcoin" ][currency_code],
-        data["dogecoin"][currency_code],
-        data["ethereum"][currency_code]
+        data["bitcoin" ][currency['code'].lower()],
+        data["dogecoin"][currency['code'].lower()],
+        data["ethereum"][currency['code'].lower()]
     ]
 
     earnings = []
@@ -134,7 +165,7 @@ def main():
         " {} is the most profitable cryptocurrency to mine.\n"
         " {:.2f} {} of income per block.\n Or {} {} per block.\n"
         ).format(names[max_index], earnings[max_index], fg(0, 255, 0) +
-        currency_sym + fg.rs, earnings_crypto[max_index], names[max_index]))
+        currency['sym'] + fg.rs, earnings_crypto[max_index], names[max_index]))
 
     periods = [hour, day, week, month, year]
     period_names = [_("hour"), _("day"), _("week"), _("month"), _("year")]
@@ -147,13 +178,11 @@ def main():
         print(
             _(" {:.2f} {} per {}, or {} {}")
             .format(
-                earnings_second * period, fg(0, 255, 0) + currency_sym + fg.rs,
+                earnings_second * period, fg(0, 255, 0) + currency['sym'] + fg.rs,
                 period_name, earnings_second_crypto * period, names[max_index]
             )
         )
 
 if __name__ == "__main__":
-    configure_language()
-    configure_currency()
     main()
-    input(_("\n Press the Enter key to close the window. "))
+    #input(_("\n Press the Enter key to close the window. "))
