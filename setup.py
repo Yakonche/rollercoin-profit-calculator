@@ -7,9 +7,10 @@ from babel.messages import frontend as babel
 WIN_NT = os.name == "nt"
 
 catalogs = [
-    "en_US","fr_FR","fr_CH","fr_CA","de_DE","es_ES",
-    "pl_PL","pt_PT","tr_TR","ru_RU","fil_PH"
+    "en_US", "fr_FR", "de_DE", "es_ES", "pl_PL", "pt_PT", "tr_TR", "ru_RU",
+    "fil_PH"
 ]
+
 
 class CommandAdapter(Command):
     user_options = []
@@ -19,6 +20,7 @@ class CommandAdapter(Command):
 
     def finalize_options(self):
         pass
+
 
 class InitAll(CommandAdapter):
     description = "Initialise all translation catalogs"
@@ -36,6 +38,7 @@ class InitAll(CommandAdapter):
             babel_ic.finalize_options()
             babel_ic.run()
 
+
 class UpdateAll(CommandAdapter):
     description = "Update all translation catalogs"
 
@@ -52,6 +55,7 @@ class UpdateAll(CommandAdapter):
             babel_uc.finalize_options()
             babel_uc.run()
 
+
 class CompileAll(CommandAdapter):
     description = "Compile all translation catalogs"
 
@@ -61,6 +65,7 @@ class CompileAll(CommandAdapter):
         babel_cc.directory = "./locale"
         babel_cc.run()
 
+
 class BuildWithCompile(build):
     def run(self):
         babel_cc = babel.compile_catalog(self.distribution)
@@ -68,6 +73,7 @@ class BuildWithCompile(build):
         babel_cc.directory = "./locale"
         babel_cc.run()
         super().run()
+
 
 class ExtractMessages(CommandAdapter):
     description = "Extract translation messages"
@@ -82,6 +88,7 @@ class ExtractMessages(CommandAdapter):
         babel_em.finalize_options()
         babel_em.run()
 
+
 def list_mo_files(folder, domain):
     mo_files = []
     for locale in os.listdir(folder):
@@ -89,6 +96,7 @@ def list_mo_files(folder, domain):
             mo_files.append(os.path.join(folder, locale, "LC_MESSAGES",
             domain + ".mo"))
     return mo_files
+
 
 SRC_PATH = os.path.dirname(__file__)
 
