@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Rollercoin Profit Calculator 0.1.2\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-03-25 14:07+0000\n"
+"POT-Creation-Date: 2021-03-25 14:22+0000\n"
 "PO-Revision-Date: 2021-03-18 07:51+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru_RU\n"
@@ -20,209 +20,209 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
 
-#: data.py:8
+#: data.py:6
 msgid "Australian Dollar"
 msgstr ""
 
-#: data.py:9
+#: data.py:7
 msgid "Canadian Dollar"
 msgstr ""
 
-#: data.py:10
+#: data.py:8
 msgid "British Pound Sterling"
 msgstr ""
 
-#: data.py:11
+#: data.py:9
 msgid "New Zealand Dollar"
 msgstr ""
 
-#: data.py:12
+#: data.py:10
 msgid "United States Dollar"
 msgstr ""
 
-#: data.py:13
+#: data.py:11
 msgid "Argentine Peso"
 msgstr ""
 
-#: data.py:14
+#: data.py:12
 msgid "Mexican Peso"
 msgstr ""
 
-#: data.py:15
+#: data.py:13
 msgid "Venezuelan Bolivar Fuerte"
 msgstr ""
 
-#: data.py:16
+#: data.py:14
 msgid "Brazil Real"
 msgstr ""
 
-#: data.py:17
+#: data.py:15
 msgid "Philippine Peso"
 msgstr ""
 
-#: data.py:18
+#: data.py:16
 msgid "Russian Ruble"
 msgstr ""
 
-#: data.py:19
+#: data.py:17
 msgid "Swiss Franc"
 msgstr ""
 
-#: data.py:20
+#: data.py:18
 msgid "Polish Zloty"
 msgstr ""
 
-#: data.py:21
+#: data.py:19
 msgid "Turkish Lira"
 msgstr ""
 
-#: data.py:22
+#: data.py:20
 msgid "Euro"
 msgstr ""
 
-#: data.py:23
+#: data.py:21
 msgid "Nigerian Naira"
 msgstr ""
 
-#: data.py:24
+#: data.py:22
 msgid "Singapore Dollar"
 msgstr ""
 
-#: data.py:25
+#: data.py:23
 msgid "Danish Krone"
 msgstr ""
 
-#: data.py:26
+#: data.py:24
 msgid "Burmese Kyat"
 msgstr ""
 
-#: data.py:27
+#: data.py:25
 msgid "Thai Baht"
 msgstr ""
 
-#: data.py:28
+#: data.py:26
 msgid "South Korean Won"
 msgstr ""
 
-#: data.py:29
+#: data.py:27
 msgid "Japanese Yen"
 msgstr ""
 
-#: data.py:30
+#: data.py:28
 msgid "Chinese Yuan"
 msgstr ""
 
-#: data.py:31
+#: data.py:29
 msgid "Indian Rupee"
 msgstr ""
 
-#: data.py:32
+#: data.py:30
 msgid "South African Rand"
 msgstr ""
 
-#: data.py:33
+#: data.py:31
 msgid "Saudi Riyal"
 msgstr ""
 
-#: data.py:34
+#: data.py:32
 msgid "Bermudian Dollar"
 msgstr ""
 
-#: data.py:35
+#: data.py:33
 msgid "Chilean Peso"
 msgstr ""
 
-#: data.py:36
+#: data.py:34
 msgid "Hong Kong Dollar"
 msgstr ""
 
-#: data.py:37
+#: data.py:35
 msgid "Malaysian Ringgit"
 msgstr ""
 
-#: data.py:38
+#: data.py:36
 msgid "Swedish Krona"
 msgstr ""
 
-#: data.py:39
+#: data.py:37
 msgid "Ukrainian Hryvnia"
 msgstr ""
 
-#: data.py:40
+#: data.py:38
 msgid "IMF Special Drawing Rights"
 msgstr ""
 
-#: data.py:41
+#: data.py:39
 msgid "Czech Koruna"
 msgstr ""
 
-#: data.py:42
+#: data.py:40
 msgid "Hungarian Forint"
 msgstr ""
 
-#: data.py:43
+#: data.py:41
 msgid "Sri Lankan Rupee"
 msgstr ""
 
-#: data.py:44
+#: data.py:42
 msgid "Pakistani Rupee"
 msgstr ""
 
-#: data.py:45
+#: data.py:43
 msgid "Bangladeshi Taka"
 msgstr ""
 
-#: data.py:46
+#: data.py:44
 msgid "Israeli New Shekel"
 msgstr ""
 
-#: data.py:47
+#: data.py:45
 msgid "Norwegian Krone"
 msgstr ""
 
-#: data.py:48
+#: data.py:46
 msgid "Vietnamese đồng"
 msgstr ""
 
-#: data.py:49
+#: data.py:47
 msgid "Indonesian Rupiah"
 msgstr ""
 
-#: data.py:50
+#: data.py:48
 msgid "New Taiwan Dollar"
 msgstr ""
 
-#: data.py:51
+#: data.py:49
 msgid "Kuwaiti Dinar"
 msgstr ""
 
-#: data.py:52
+#: data.py:50
 msgid "Bahraini Dinar"
 msgstr ""
 
-#: locales.py:61
+#: locales.py:65
 msgid ""
 "\n"
 "Fiat currencies :"
 msgstr ""
 
-#: locales.py:63 locales.py:75
+#: locales.py:68 locales.py:92
 msgid "{}: {} ({})"
 msgstr ""
 
-#: locales.py:73
+#: locales.py:89
 msgid ""
 "\n"
 "Crypto currencies :"
 msgstr ""
 
-#: locales.py:87
+#: locales.py:108
 msgid ""
 "\n"
 "Select a currency [default - USD] : "
 msgstr ""
 
-#: locales.py:89
+#: locales.py:114
 msgid ""
 "\n"
 "Invalid currency!\n"
@@ -282,7 +282,7 @@ msgstr " Это примерно :"
 msgid " {:.2f} {} per {}, or {} {}"
 msgstr " {:.2f} {} в {}, или {} {}"
 
-#: rc_profit_calc.py:109
+#: rc_profit_calc.py:110
 msgid ""
 "\n"
 " Press the Enter key to close the window. "

@@ -97,8 +97,9 @@ def main():
         print(
             _(" {:.2f} {} per {}, or {} {}")
             .format(
-                earnings_second * period, fg(0, 255, 0) + currency['sym'] + fg.rs,
-                period_name, earnings_second_crypto * period, names[max_index]
+                earnings_second * period,
+                fg(0, 255, 0) + currency['sym'] + fg.rs, period_name,
+                earnings_second_crypto * period, names[max_index]
             )
         )
 

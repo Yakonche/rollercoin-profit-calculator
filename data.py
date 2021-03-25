@@ -2,8 +2,6 @@ import gettext
 
 _ = gettext.gettext
 
-
-
 currencies_fiat = [
     {"code": "AUD", "name": _("Australian Dollar")         , "sym": "$"   },
     {"code": "CAD", "name": _("Canadian Dollar")           , "sym": "$"   },
