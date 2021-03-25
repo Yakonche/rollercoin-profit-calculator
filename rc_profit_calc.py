@@ -4,25 +4,16 @@ import json
 import urllib.request
 import os
 import sys
-import decimal
+import gettext
+
+from locales import get_currency, get_language, install_language
+from utils import float2str
 
 from sty import fg
 if sys.platform == "win32":
     os.system('color')
 
-import gettext
-gettext.bindtextdomain('rc_profit_calc', 'locale')
-gettext.textdomain('rc_profit_calc')
-gettext.install('rc_profit_calc', 'locale')
 _ = gettext.gettext
-
-from data import langs, currencies_fiat, currencies_crypto
-from utils import len_display
-
-print("")
-
-ctx = decimal.Context()
-ctx.prec = 10
 
 minute = 60
 hour = minute * 60
@@ -31,80 +22,9 @@ week = day * 7
 month = (365.25 / 12) * day
 year = month * 12
 
-console_width = 120
-
-def float2str(f):
-    d1 = ctx.create_decimal(repr(f))
-    return format(d1, 'f')
-
-
-def configure_language():
-    while True:
-        for idx, lang in enumerate(langs):
-            print(
-                "\t{}: {} ({})".format(idx + 1, lang['name'], lang['code'])
-            )
-        lang = input("\n Select a language [default - 1] : ") or "1"
-
-        try:
-            lang_idx = int(lang) - 1
-            if len(langs) > lang_idx >= 0:
-                selected_lang = lang_idx
-                break
-            else:
-                print(" Invalid selection, try again\n")
-
-        except ValueError:
-            print(" Please input a number, try again\n")
-
-    lang = gettext.translation(
-        'rc_profit_calc', 'locale', [langs[selected_lang]['code']]
-    )
-    lang.install()
-    os.environ['LANGUAGE'] = langs[selected_lang]['code']
-
-
-def get_currency():
-    options = [curr['code'] for curr in currencies_crypto + currencies_fiat]
-
-    while True:
-        print(_("\nFiat currencies :"))
-        for idx, curr in enumerate(currencies_fiat):
-            cell_str = _("{}: {} ({})").format(curr['code'], curr['name'], curr['sym'])
-            cell_padding = int(console_width / 2 - len_display(cell_str.strip()))
-
-            print(
-                cell_str.strip() + (" " * cell_padding),
-                end="" if idx != len(currencies_fiat) - 1 else "\n"
-            )
-            if idx % 2:
-                print()  # \n
-
-        print(_("\nCrypto currencies :"))
-        for idx, curr in enumerate(currencies_crypto):
-            cell_str = _("{}: {} ({})").format(
-                curr['code'].ljust(4, " "), curr['name'], curr['sym']
-            )
-            cell_padding = int(console_width / 2 - len_display(cell_str.strip()))
-
-            print(
-                cell_str.strip() + (" " * cell_padding),
-                end="" if idx != len(currencies_crypto) - 1 else "\n"
-            )
-            if idx % 2:
-                print()  # \n
-
-        selected_currency = input(_("\nSelect a currency [default - USD] : ")) or "USD"
-        if selected_currency not in options:
-            print(_("\nInvalid currency!\n"))
-            continue
-        break
-
-    return [curr for curr in currencies_crypto + currencies_fiat if curr['code'] == selected_currency][0]
-
 
 def main():
-    configure_language()
+    print()  # \n
     currency = get_currency()
 
     current_hashrate = float(input(_("\n Enter your hashrate (TH/s) : ")))
@@ -124,10 +44,10 @@ def main():
 
     print()  # \n
     network_powers = [
-    float(input(
-        _(" Enter the {} network power (EH/s) : ").format(name)
-    )) for name in names
-]
+        float(input(
+            _(" Enter the {} network power (EH/s) : ").format(name)
+        )) for name in names
+    ]
 
     print()  # \n
     rewards = [
@@ -182,6 +102,8 @@ def main():
             )
         )
 
+
 if __name__ == "__main__":
+    install_language(get_language())
     main()
-    #input(_("\n Press the Enter key to close the window. "))
+    input(_("\n Press the Enter key to close the window. "))

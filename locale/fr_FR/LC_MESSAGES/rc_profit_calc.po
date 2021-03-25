@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Rollercoin Profit Calculator 0.1.2\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-03-24 18:27+0000\n"
+"POT-Creation-Date: 2021-03-25 14:07+0000\n"
 "PO-Revision-Date: 2021-03-18 07:51+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr_FR\n"
@@ -19,215 +19,223 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
 
-#: data.py:18
+#: data.py:8
 msgid "Australian Dollar"
-msgstr ""
+msgstr "Dollar australien"
+
+#: data.py:9
+msgid "Canadian Dollar"
+msgstr "Dollar canadien"
+
+#: data.py:10
+msgid "British Pound Sterling"
+msgstr "Livre sterling britannique"
+
+#: data.py:11
+msgid "New Zealand Dollar"
+msgstr "Dollar néo-zélandais"
+
+#: data.py:12
+msgid "United States Dollar"
+msgstr "Dollar américain"
+
+#: data.py:13
+msgid "Argentine Peso"
+msgstr "Peso argentin"
+
+#: data.py:14
+msgid "Mexican Peso"
+msgstr "Peso mexicain"
+
+#: data.py:15
+msgid "Venezuelan Bolivar Fuerte"
+msgstr "Bolivar vénézuélien Fuerte"
+
+#: data.py:16
+msgid "Brazil Real"
+msgstr "Brésil réel"
+
+#: data.py:17
+msgid "Philippine Peso"
+msgstr "Peso philippin"
+
+#: data.py:18
+msgid "Russian Ruble"
+msgstr "Rouble russe"
 
 #: data.py:19
-msgid "Canadian Dollar"
-msgstr ""
+msgid "Swiss Franc"
+msgstr "Franc suisse"
 
 #: data.py:20
-msgid "British Pound Sterling"
-msgstr ""
+msgid "Polish Zloty"
+msgstr "Zloty polonais"
 
 #: data.py:21
-msgid "New Zealand Dollar"
-msgstr ""
+msgid "Turkish Lira"
+msgstr "Lire turque"
 
 #: data.py:22
-msgid "United States Dollar"
-msgstr ""
-
-#: data.py:23
-msgid "Argentine Peso"
-msgstr ""
-
-#: data.py:24
-msgid "Mexican Peso"
-msgstr ""
-
-#: data.py:25
-msgid "Venezuelan Bolivar Fuerte"
-msgstr ""
-
-#: data.py:26
-msgid "Brazil Real"
-msgstr ""
-
-#: data.py:27
-msgid "Philippine Peso"
-msgstr ""
-
-#: data.py:28
-msgid "Russian Ruble"
-msgstr ""
-
-#: data.py:29
-msgid "Swiss Franc"
-msgstr ""
-
-#: data.py:30
-msgid "Polish Zloty"
-msgstr ""
-
-#: data.py:31
-msgid "Turkish Lira"
-msgstr ""
-
-#: data.py:32
 msgid "Euro"
 msgstr ""
 
-#: data.py:33
+#: data.py:23
 msgid "Nigerian Naira"
-msgstr ""
+msgstr "Naira nigérian"
+
+#: data.py:24
+msgid "Singapore Dollar"
+msgstr "Dollar de Singapour"
+
+#: data.py:25
+msgid "Danish Krone"
+msgstr "Couronne danoise"
+
+#: data.py:26
+msgid "Burmese Kyat"
+msgstr "Kyat birman"
+
+#: data.py:27
+msgid "Thai Baht"
+msgstr "Baht thaïlandais"
+
+#: data.py:28
+msgid "South Korean Won"
+msgstr "Won sud-coréen"
+
+#: data.py:29
+msgid "Japanese Yen"
+msgstr "Yen japonais"
+
+#: data.py:30
+msgid "Chinese Yuan"
+msgstr "Yuan chinois"
+
+#: data.py:31
+msgid "Indian Rupee"
+msgstr "Roupie indienne"
+
+#: data.py:32
+msgid "South African Rand"
+msgstr "Rand sud-africain"
+
+#: data.py:33
+msgid "Saudi Riyal"
+msgstr "Riyal saoudien"
 
 #: data.py:34
-msgid "Singapore Dollar"
-msgstr ""
+msgid "Bermudian Dollar"
+msgstr "Dollar bermudien"
 
 #: data.py:35
-msgid "Danish Krone"
-msgstr ""
+msgid "Chilean Peso"
+msgstr "Peso chilien"
 
 #: data.py:36
-msgid "Burmese Kyat"
-msgstr ""
+msgid "Hong Kong Dollar"
+msgstr "Dollar de Hong Kong"
 
 #: data.py:37
-msgid "Thai Baht"
-msgstr ""
+msgid "Malaysian Ringgit"
+msgstr "Cloche malaisienne"
 
 #: data.py:38
-msgid "South Korean Won"
-msgstr ""
+msgid "Swedish Krona"
+msgstr "Couronne suédoise"
 
 #: data.py:39
-msgid "Japanese Yen"
-msgstr ""
+msgid "Ukrainian Hryvnia"
+msgstr "Hryvnia ukrainienne"
 
 #: data.py:40
-msgid "Chinese Yuan"
-msgstr ""
+msgid "IMF Special Drawing Rights"
+msgstr "Droits de tirage spéciaux du FMI"
 
 #: data.py:41
-msgid "Indian Rupee"
-msgstr ""
+msgid "Czech Koruna"
+msgstr "Couronne tchèque"
 
 #: data.py:42
-msgid "Saudi Riyal"
-msgstr ""
+msgid "Hungarian Forint"
+msgstr "Forint hongrois"
 
 #: data.py:43
-msgid "South African Rand"
-msgstr ""
+msgid "Sri Lankan Rupee"
+msgstr "Roupie sri-lankaise"
 
 #: data.py:44
-msgid "Bermudian Dollar"
-msgstr ""
+msgid "Pakistani Rupee"
+msgstr "Roupie pakistanaise"
 
 #: data.py:45
-msgid "Chilean Peso"
-msgstr ""
+msgid "Bangladeshi Taka"
+msgstr "Bangladesh Taka"
 
 #: data.py:46
-msgid "Hong Kong Dollar"
-msgstr ""
+msgid "Israeli New Shekel"
+msgstr "Nouveau shekel israélien"
 
 #: data.py:47
-msgid "Malaysian Ringgit"
-msgstr ""
+msgid "Norwegian Krone"
+msgstr "Couronne norvégienne"
 
 #: data.py:48
-msgid "Swedish Krona"
-msgstr ""
+msgid "Vietnamese đồng"
+msgstr "đồng Vietnamien"
 
 #: data.py:49
-msgid "Ukrainian Hryvnia"
-msgstr ""
+msgid "Indonesian Rupiah"
+msgstr "Roupie indonésienne"
 
 #: data.py:50
-msgid "IMF Special Drawing Rights"
-msgstr ""
+msgid "New Taiwan Dollar"
+msgstr "Nouveau dollar de Taïwan"
 
 #: data.py:51
-msgid "Czech Koruna"
-msgstr ""
+msgid "Kuwaiti Dinar"
+msgstr "Dinar koweïtien"
 
 #: data.py:52
-msgid "Hungarian Forint"
-msgstr ""
-
-#: data.py:53
-msgid "Sri Lankan Rupee"
-msgstr ""
-
-#: data.py:54
-msgid "Pakistani Rupee"
-msgstr ""
-
-#: data.py:55
-msgid "Bangladeshi Taka"
-msgstr ""
-
-#: data.py:56
-msgid "Israeli New Shekel"
-msgstr ""
-
-#: data.py:57
-msgid "Norwegian Krone"
-msgstr ""
-
-#: data.py:58
-msgid "Vietnamese đồng"
-msgstr ""
-
-#: data.py:59
-msgid "Indonesian Rupiah"
-msgstr ""
-
-#: data.py:60
-msgid "New Taiwan Dollar"
-msgstr ""
-
-#: data.py:61
-msgid "Kuwaiti Dinar"
-msgstr ""
-
-#: data.py:62
 msgid "Bahraini Dinar"
-msgstr ""
+msgstr "Dinar bahreïni"
 
-#: rc_profit_calc.py:71
+#: locales.py:61
 msgid ""
 "\n"
 "Fiat currencies :"
 msgstr ""
+"\n"
+"Devises Fiat :"
 
-#: rc_profit_calc.py:73 rc_profit_calc.py:85
+#: locales.py:63 locales.py:75
 msgid "{}: {} ({})"
 msgstr ""
 
-#: rc_profit_calc.py:83
+#: locales.py:73
 msgid ""
 "\n"
 "Crypto currencies :"
 msgstr ""
+"\n"
+"Crypto-monnaies :"
 
-#: rc_profit_calc.py:97
+#: locales.py:87
 msgid ""
 "\n"
 "Select a currency [default - USD] : "
 msgstr ""
+"\n"
+"Sélectionnez une devise [défaut - USD] : "
 
-#: rc_profit_calc.py:99
+#: locales.py:89
 msgid ""
 "\n"
 "Invalid currency!\n"
 msgstr ""
+"\n"
+"Devise invalide !\n"
 
-#: rc_profit_calc.py:110
+#: rc_profit_calc.py:30
 msgid ""
 "\n"
 " Enter your hashrate (TH/s) : "
@@ -235,15 +243,15 @@ msgstr ""
 "\n"
 " Entrez votre hashrate (TH/s) : "
 
-#: rc_profit_calc.py:128
+#: rc_profit_calc.py:48
 msgid " Enter the {} network power (EH/s) : "
 msgstr " Entrez la puissance du réseau {} (EH/s) : "
 
-#: rc_profit_calc.py:135
+#: rc_profit_calc.py:55
 msgid " Enter the {} reward [default - {}] : "
 msgstr " Entrez la récompense en {} [défaut - {}] : "
 
-#: rc_profit_calc.py:163
+#: rc_profit_calc.py:83
 msgid ""
 " {} is the most profitable cryptocurrency to mine.\n"
 " {:.2f} {} of income per block.\n"
@@ -253,44 +261,39 @@ msgstr ""
 " Soit {:.2f} {} de revenu par bloc.\n"
 " Ou {} {} par bloc.\n"
 
-#: rc_profit_calc.py:170
+#: rc_profit_calc.py:90
 msgid "hour"
 msgstr "heure"
 
-#: rc_profit_calc.py:170
+#: rc_profit_calc.py:90
 msgid "day"
 msgstr "jour"
 
-#: rc_profit_calc.py:170
+#: rc_profit_calc.py:90
 msgid "week"
 msgstr "semaine"
 
-#: rc_profit_calc.py:170
+#: rc_profit_calc.py:90
 msgid "month"
 msgstr "mois"
 
-#: rc_profit_calc.py:170
+#: rc_profit_calc.py:90
 msgid "year"
 msgstr "an"
 
-#: rc_profit_calc.py:174
+#: rc_profit_calc.py:94
 msgid " This is around :"
 msgstr " Soit environ :"
 
-#: rc_profit_calc.py:178
+#: rc_profit_calc.py:98
 msgid " {:.2f} {} per {}, or {} {}"
 msgstr " {:.2f} {} par {}, ou {} {}"
 
-#~ msgid "usd"
-#~ msgstr "eur"
-
-#~ msgid "$"
-#~ msgstr "€"
-
-#~ msgid ""
-#~ "\n"
-#~ " Press the Enter key to close the window. "
-#~ msgstr ""
-#~ "\n"
-#~ " Appuyez sur la touche Entrée pour fermer la fenêtre. "
+#: rc_profit_calc.py:109
+msgid ""
+"\n"
+" Press the Enter key to close the window. "
+msgstr ""
+"\n"
+" Appuyez sur la touche Entrée pour fermer la fenêtre. "
 

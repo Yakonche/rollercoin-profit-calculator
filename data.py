@@ -2,17 +2,7 @@ import gettext
 
 _ = gettext.gettext
 
-langs = [
-    {"name": "English"  , "code": "en_US"},
-    {"name": "Français" , "code": "fr_FR"},
-    {"name": "Deutsche" , "code": "de_DE"},
-    {"name": "Español"  , "code": "es_ES"},
-    {"name": "Polski"   , "code": "pl_PL"},
-    {"name": "Português", "code": "pt_PT"},
-    {"name": "Türk"     , "code": "tr_TR"},
-    {"name": "Pусский"  , "code": "ru_RU"},
-    {"name": "Pilipino" , "code": "fil_PH"}
-]
+
 
 currencies_fiat = [
     {"code": "AUD", "name": _("Australian Dollar")         , "sym": "$"   },
@@ -39,8 +29,8 @@ currencies_fiat = [
     {"code": "JPY", "name": _("Japanese Yen")              , "sym": "¥"   },
     {"code": "CNY", "name": _("Chinese Yuan")              , "sym": "¥"   },
     {"code": "INR", "name": _("Indian Rupee")              , "sym": "₹"   },
-    {"code": "SAR", "name": _("Saudi Riyal")               , "sym": "﷼"   },
     {"code": "ZAR", "name": _("South African Rand")        , "sym": "R"   },
+    {"code": "SAR", "name": _("Saudi Riyal")               , "sym": "﷼"   },
     {"code": "BMD", "name": _("Bermudian Dollar")          , "sym": "$"   },
     {"code": "CLP", "name": _("Chilean Peso")              , "sym": "$"   },
     {"code": "HKD", "name": _("Hong Kong Dollar")          , "sym": "元"  },
