@@ -6,10 +6,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Rollercoin Profit Calculator 0.1.2\n"
+"Project-Id-Version: Rollercoin Profit Calculator 0.1.5\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-03-25 14:22+0000\n"
-"PO-Revision-Date: 2021-03-18 07:51+0100\n"
+"POT-Creation-Date: 2021-03-31 16:52+0200\n"
+"PO-Revision-Date: 2021-03-27 10:54+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr_FR\n"
 "Language-Team: fr_FR <LL@li.org>\n"
@@ -17,7 +17,69 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.8.0\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: calculator.py:30
+msgid ""
+"\n"
+" Enter your hashrate (TH/s) : "
+msgstr ""
+"\n"
+" Entrez votre hashrate (TH/s) : "
+
+#: calculator.py:48
+msgid " Enter the {} network power (EH/s) : "
+msgstr " Entrez la puissance du réseau {} (EH/s) : "
+
+#: calculator.py:55
+msgid " Enter the {} reward [default - {}] : "
+msgstr " Entrez la récompense en {} [défaut - {}] : "
+
+#: calculator.py:83
+msgid ""
+" {} is the most profitable cryptocurrency to mine.\n"
+" {:.2f} {} of income per block.\n"
+" Or {} {} per block.\n"
+msgstr ""
+" {} est la crypto-monnaie la plus rentable à exploiter.\n"
+" Soit {:.2f} {} de revenu par bloc.\n"
+" Ou {} {} par bloc.\n"
+
+#: calculator.py:90
+msgid "hour"
+msgstr "heure"
+
+#: calculator.py:90
+msgid "day"
+msgstr "jour"
+
+#: calculator.py:90
+msgid "week"
+msgstr "semaine"
+
+#: calculator.py:90
+msgid "month"
+msgstr "mois"
+
+#: calculator.py:90
+msgid "year"
+msgstr "an"
+
+#: calculator.py:94
+msgid " This is around :"
+msgstr " Soit environ :"
+
+#: calculator.py:98
+msgid " {:.2f} {} per {}, or {} {}"
+msgstr " {:.2f} {} par {}, ou {} {}"
+
+#: calculator.py:110
+msgid ""
+"\n"
+" Press the Enter key to close the window. "
+msgstr ""
+"\n"
+" Appuyez sur la touche Entrée pour fermer la fenêtre. "
 
 #: data.py:6
 msgid "Australian Dollar"
@@ -148,58 +210,54 @@ msgid "Ukrainian Hryvnia"
 msgstr "Hryvnia ukrainienne"
 
 #: data.py:38
-msgid "IMF Special Drawing Rights"
-msgstr "Droits de tirage spéciaux du FMI"
-
-#: data.py:39
 msgid "Czech Koruna"
 msgstr "Couronne tchèque"
 
-#: data.py:40
+#: data.py:39
 msgid "Hungarian Forint"
 msgstr "Forint hongrois"
 
-#: data.py:41
+#: data.py:40
 msgid "Sri Lankan Rupee"
 msgstr "Roupie sri-lankaise"
 
-#: data.py:42
+#: data.py:41
 msgid "Pakistani Rupee"
 msgstr "Roupie pakistanaise"
 
-#: data.py:43
+#: data.py:42
 msgid "Bangladeshi Taka"
-msgstr "Bangladesh Taka"
+msgstr "Taka du Bangladesh"
 
-#: data.py:44
+#: data.py:43
 msgid "Israeli New Shekel"
 msgstr "Nouveau shekel israélien"
 
-#: data.py:45
+#: data.py:44
 msgid "Norwegian Krone"
 msgstr "Couronne norvégienne"
 
-#: data.py:46
+#: data.py:45
 msgid "Vietnamese đồng"
 msgstr "đồng Vietnamien"
 
-#: data.py:47
+#: data.py:46
 msgid "Indonesian Rupiah"
 msgstr "Roupie indonésienne"
 
-#: data.py:48
+#: data.py:47
 msgid "New Taiwan Dollar"
 msgstr "Nouveau dollar de Taïwan"
 
-#: data.py:49
+#: data.py:48
 msgid "Kuwaiti Dinar"
 msgstr "Dinar koweïtien"
 
-#: data.py:50
+#: data.py:49
 msgid "Bahraini Dinar"
 msgstr "Dinar bahreïni"
 
-#: locales.py:65
+#: locales.py:67
 msgid ""
 "\n"
 "Fiat currencies :"
@@ -207,11 +265,11 @@ msgstr ""
 "\n"
 "Devises Fiat :"
 
-#: locales.py:68 locales.py:92
+#: locales.py:70 locales.py:94
 msgid "{}: {} ({})"
 msgstr ""
 
-#: locales.py:89
+#: locales.py:91
 msgid ""
 "\n"
 "Crypto currencies :"
@@ -219,7 +277,7 @@ msgstr ""
 "\n"
 "Crypto-monnaies :"
 
-#: locales.py:108
+#: locales.py:110
 msgid ""
 "\n"
 "Select a currency [default - USD] : "
@@ -227,7 +285,7 @@ msgstr ""
 "\n"
 "Sélectionnez une devise [défaut - USD] : "
 
-#: locales.py:114
+#: locales.py:116
 msgid ""
 "\n"
 "Invalid currency!\n"
@@ -235,65 +293,6 @@ msgstr ""
 "\n"
 "Devise invalide !\n"
 
-#: rc_profit_calc.py:30
-msgid ""
-"\n"
-" Enter your hashrate (TH/s) : "
-msgstr ""
-"\n"
-" Entrez votre hashrate (TH/s) : "
-
-#: rc_profit_calc.py:48
-msgid " Enter the {} network power (EH/s) : "
-msgstr " Entrez la puissance du réseau {} (EH/s) : "
-
-#: rc_profit_calc.py:55
-msgid " Enter the {} reward [default - {}] : "
-msgstr " Entrez la récompense en {} [défaut - {}] : "
-
-#: rc_profit_calc.py:83
-msgid ""
-" {} is the most profitable cryptocurrency to mine.\n"
-" {:.2f} {} of income per block.\n"
-" Or {} {} per block.\n"
-msgstr ""
-" {} est la crypto-monnaie la plus rentable à exploiter.\n"
-" Soit {:.2f} {} de revenu par bloc.\n"
-" Ou {} {} par bloc.\n"
-
-#: rc_profit_calc.py:90
-msgid "hour"
-msgstr "heure"
-
-#: rc_profit_calc.py:90
-msgid "day"
-msgstr "jour"
-
-#: rc_profit_calc.py:90
-msgid "week"
-msgstr "semaine"
-
-#: rc_profit_calc.py:90
-msgid "month"
-msgstr "mois"
-
-#: rc_profit_calc.py:90
-msgid "year"
-msgstr "an"
-
-#: rc_profit_calc.py:94
-msgid " This is around :"
-msgstr " Soit environ :"
-
-#: rc_profit_calc.py:98
-msgid " {:.2f} {} per {}, or {} {}"
-msgstr " {:.2f} {} par {}, ou {} {}"
-
-#: rc_profit_calc.py:110
-msgid ""
-"\n"
-" Press the Enter key to close the window. "
-msgstr ""
-"\n"
-" Appuyez sur la touche Entrée pour fermer la fenêtre. "
+#~ msgid "IMF Special Drawing Rights"
+#~ msgstr "Droits de tirage spéciaux du FMI"
 

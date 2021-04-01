@@ -35,7 +35,6 @@ currencies_fiat = [
     {"code": "MYR", "name": _("Malaysian Ringgit")         , "sym": "RM"  },
     {"code": "SEK", "name": _("Swedish Krona")             , "sym": "kr"  },
     {"code": "UAH", "name": _("Ukrainian Hryvnia")         , "sym": "₴"   },
-    {"code": "XDR", "name": _("IMF Special Drawing Rights"), "sym": "SDR" },
     {"code": "CZK", "name": _("Czech Koruna")              , "sym": "Kč"  },
     {"code": "HUF", "name": _("Hungarian Forint")          , "sym": "Ft"  },
     {"code": "LKR", "name": _("Sri Lankan Rupee")          , "sym": "ூ" },

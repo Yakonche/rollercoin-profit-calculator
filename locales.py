@@ -3,29 +3,31 @@ import os
 
 from utils import len_display
 
-gettext.bindtextdomain('rc_profit_calc', 'locale')
-gettext.textdomain('rc_profit_calc')
-gettext.install('rc_profit_calc', 'locale')
+gettext.bindtextdomain('calculator', 'locale')
+gettext.textdomain('calculator')
+gettext.install('calculator', 'locale')
 _ = gettext.gettext
 
 console_width = 120
 
+print("")
+
 langs = [
-    {"name": "English", "code": "en_US"},
-    {"name": "Français", "code": "fr_FR"},
-    {"name": "Deutsche", "code": "de_DE"},
-    {"name": "Español", "code": "es_ES"},
-    {"name": "Polski", "code": "pl_PL"},
+    {"name": "English  ", "code": "en_US"},
+    {"name": "Français ", "code": "fr_FR"},
+    {"name": "Deutsche ", "code": "de_DE"},
+    {"name": "Español  ", "code": "es_ES"},
+    {"name": "Polski   ", "code": "pl_PL"},
     {"name": "Português", "code": "pt_PT"},
-    {"name": "Türk", "code": "tr_TR"},
-    {"name": "Pусский", "code": "ru_RU"},
-    {"name": "Pilipino", "code": "fil_PH"}
+    {"name": "Türk     ", "code": "tr_TR"},
+    {"name": "Pусский  ", "code": "ru_RU"},
+    {"name": "Pilipino ", "code": "fil_PH"}
 ]
 
 
 def install_language(code):
     lang = gettext.translation(
-        'rc_profit_calc', 'locale', [code]
+        'calculator', 'locale', [code]
     )
     lang.install()
     os.environ['LANGUAGE'] = code
@@ -62,10 +64,15 @@ def get_currency():
 
     # Spin until user picks a valid option
     while True:
-        print(_("\nFiat currencies :"))
-        # Iterate all fiat currencies
+        print(_(" Fiat currencies :"))
+        print( ┌────────┬───────────────────────────┬───────┬────────┬────────
+        ────────────────────┬───────┐)
+        print(_( │  code  │ name                      │symbol │  code  │ name
+                            │symbol │))
+        print( ├────────┴───────────────────────────┴───────┼────────┴────────
+        ────────────────────┴───────┤)
         for idx, curr in enumerate(currencies_fiat):
-            cell_str = _("{}: {} ({})").format(
+            cell_str = [_("| - {}  : "), _("{}"), _("({})")].format(
                 curr['code'], curr['name'], curr['sym']
             )
             # Quantity of spaces required to fill the remainder of the cell.
@@ -86,10 +93,15 @@ def get_currency():
             if idx % 2:
                 print()  # \n
 
-        print(_("\nCrypto currencies :"))
-        # Repeat the process for all crypto currencies
+        print(_(" Crypto currencies :"))
+        print( ┌────────┬───────────────────────────┬───────┬────────┬────────
+        ────────────────────┬───────┐)
+        print(_( │  code  │ name                      │symbol │  code  │ name
+                            │symbol │))
+        print( ├────────┴───────────────────────────┴───────┼────────┴────────
+        ────────────────────┴───────┤)
         for idx, curr in enumerate(currencies_crypto):
-            cell_str = _("{}: {} ({})").format(
+            cell_str = [_("| - {}  : "), _("{}"), _("({})")].format(
                 curr['code'].ljust(4, " "), curr['name'], curr['sym']
             )
             cell_padding = int(
@@ -105,13 +117,13 @@ def get_currency():
 
         # As the user to select from the displayed lists
         selected_currency = input(
-            _("\nSelect a currency [default - USD] : ")
+            _("\n Select a currency [default - USD] : ")
         ) or "USD"
 
         # If the user's input wasn't in the list of options, go back to start
         # of `while True` loop
         if selected_currency not in options:
-            print(_("\nInvalid currency!\n"))
+            print(_("\n Invalid currency!\n"))
             continue
         # We only reach the end if the user has picked a valid option
         # so we can break the `while True` at this point

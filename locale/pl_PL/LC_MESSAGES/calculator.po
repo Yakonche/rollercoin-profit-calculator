@@ -1,0 +1,299 @@
+# Polish (Poland) translations for Rollercoin Profit Calculator.
+# Copyright (C) 2021 ORGANIZATION
+# This file is distributed under the same license as the Rollercoin Profit
+# Calculator project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Rollercoin Profit Calculator 0.1.5\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2021-03-31 16:52+0200\n"
+"PO-Revision-Date: 2021-03-27 10:54+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pl_PL\n"
+"Language-Team: pl_PL <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: calculator.py:30
+msgid ""
+"\n"
+" Enter your hashrate (TH/s) : "
+msgstr ""
+"\n"
+" Wpisz swój hashrate (TH/s) : "
+
+#: calculator.py:48
+msgid " Enter the {} network power (EH/s) : "
+msgstr " Wprowadź moc sieci {} (EH/s) : "
+
+#: calculator.py:55
+msgid " Enter the {} reward [default - {}] : "
+msgstr " Wprowadź nagrodę {} [domyślna - {}] : "
+
+#: calculator.py:83
+msgid ""
+" {} is the most profitable cryptocurrency to mine.\n"
+" {:.2f} {} of income per block.\n"
+" Or {} {} per block.\n"
+msgstr ""
+" {} jest najbardziej dochodową kryptowalutą, jaką mogę znaleźć.\n"
+" {:.2f} {} dochodu na blok.\n"
+" Lub {} {} na blok.\n"
+
+#: calculator.py:90
+msgid "hour"
+msgstr "godzina"
+
+#: calculator.py:90
+msgid "day"
+msgstr "dzień"
+
+#: calculator.py:90
+msgid "week"
+msgstr "tydzień"
+
+#: calculator.py:90
+msgid "month"
+msgstr "miesiąc"
+
+#: calculator.py:90
+msgid "year"
+msgstr "rok"
+
+#: calculator.py:94
+msgid " This is around :"
+msgstr " To jest w pobliżu :"
+
+#: calculator.py:98
+msgid " {:.2f} {} per {}, or {} {}"
+msgstr " {:.2f} {} na {}, lub {} {}"
+
+#: calculator.py:110
+msgid ""
+"\n"
+" Press the Enter key to close the window. "
+msgstr ""
+"\n"
+" Naciśnij klawisz Enter, aby zamknąć okno. "
+
+#: data.py:6
+msgid "Australian Dollar"
+msgstr "Dolar australijski"
+
+#: data.py:7
+msgid "Canadian Dollar"
+msgstr "Dolar kanadyjski"
+
+#: data.py:8
+msgid "British Pound Sterling"
+msgstr "Brytyjski funt szterling"
+
+#: data.py:9
+msgid "New Zealand Dollar"
+msgstr "Dolar nowozelandzki"
+
+#: data.py:10
+msgid "United States Dollar"
+msgstr "Dolar amerykański"
+
+#: data.py:11
+msgid "Argentine Peso"
+msgstr "Peso argentyńskie"
+
+#: data.py:12
+msgid "Mexican Peso"
+msgstr "Peso meksykańskie"
+
+#: data.py:13
+msgid "Venezuelan Bolivar Fuerte"
+msgstr "Wenezuelski Bolivar Fuerte"
+
+#: data.py:14
+msgid "Brazil Real"
+msgstr "Real brazylijski"
+
+#: data.py:15
+msgid "Philippine Peso"
+msgstr "Peso filipińskie"
+
+#: data.py:16
+msgid "Russian Ruble"
+msgstr "Rubel rosyjski"
+
+#: data.py:17
+msgid "Swiss Franc"
+msgstr "Frank szwajcarski"
+
+#: data.py:18
+msgid "Polish Zloty"
+msgstr "Złoty polski"
+
+#: data.py:19
+msgid "Turkish Lira"
+msgstr "Lira turecka"
+
+#: data.py:20
+msgid "Euro"
+msgstr ""
+
+#: data.py:21
+msgid "Nigerian Naira"
+msgstr "Nigeryjska Naira"
+
+#: data.py:22
+msgid "Singapore Dollar"
+msgstr "Dolar singapurski"
+
+#: data.py:23
+msgid "Danish Krone"
+msgstr "Korona duńska"
+
+#: data.py:24
+msgid "Burmese Kyat"
+msgstr "Birmański Kyat"
+
+#: data.py:25
+msgid "Thai Baht"
+msgstr "Baht tajski"
+
+#: data.py:26
+msgid "South Korean Won"
+msgstr "Won w Korei Południowej"
+
+#: data.py:27
+msgid "Japanese Yen"
+msgstr "Japoński jen"
+
+#: data.py:28
+msgid "Chinese Yuan"
+msgstr "Chiński juan"
+
+#: data.py:29
+msgid "Indian Rupee"
+msgstr "Rupia indyjska"
+
+#: data.py:30
+msgid "South African Rand"
+msgstr "Rand południowoafrykański"
+
+#: data.py:31
+msgid "Saudi Riyal"
+msgstr "Rial saudyjski"
+
+#: data.py:32
+msgid "Bermudian Dollar"
+msgstr "Dolar bermudzki"
+
+#: data.py:33
+msgid "Chilean Peso"
+msgstr "Peso chilijskie"
+
+#: data.py:34
+msgid "Hong Kong Dollar"
+msgstr "Dolar hongkoński"
+
+#: data.py:35
+msgid "Malaysian Ringgit"
+msgstr "Ringgit malezyjski"
+
+#: data.py:36
+msgid "Swedish Krona"
+msgstr "Korona szwedzka"
+
+#: data.py:37
+msgid "Ukrainian Hryvnia"
+msgstr "Hrywna ukraińska"
+
+#: data.py:38
+msgid "Czech Koruna"
+msgstr "Korona czeska"
+
+#: data.py:39
+msgid "Hungarian Forint"
+msgstr "Forint węgierski"
+
+#: data.py:40
+msgid "Sri Lankan Rupee"
+msgstr "Rupia lankijska"
+
+#: data.py:41
+msgid "Pakistani Rupee"
+msgstr "Rupia pakistańska"
+
+#: data.py:42
+msgid "Bangladeshi Taka"
+msgstr "Taka bengalska"
+
+#: data.py:43
+msgid "Israeli New Shekel"
+msgstr "Izraelski nowy szekel"
+
+#: data.py:44
+msgid "Norwegian Krone"
+msgstr "Korona norweska"
+
+#: data.py:45
+msgid "Vietnamese đồng"
+msgstr "Wietnamski đồng"
+
+#: data.py:46
+msgid "Indonesian Rupiah"
+msgstr "Rupia indonezyjska"
+
+#: data.py:47
+msgid "New Taiwan Dollar"
+msgstr "Nowy dolar tajwański"
+
+#: data.py:48
+msgid "Kuwaiti Dinar"
+msgstr "Dinar kuwejcki"
+
+#: data.py:49
+msgid "Bahraini Dinar"
+msgstr "Dinar Bahrajnu"
+
+#: locales.py:67
+msgid ""
+"\n"
+"Fiat currencies :"
+msgstr ""
+"\n"
+"Waluty Fiata :"
+
+#: locales.py:70 locales.py:94
+msgid "{}: {} ({})"
+msgstr ""
+
+#: locales.py:91
+msgid ""
+"\n"
+"Crypto currencies :"
+msgstr ""
+"\n"
+"Kryptowaluty :"
+
+#: locales.py:110
+msgid ""
+"\n"
+"Select a currency [default - USD] : "
+msgstr ""
+"\n"
+"Wybierz walutę [domyślna - USD] : "
+
+#: locales.py:116
+msgid ""
+"\n"
+"Invalid currency!\n"
+msgstr ""
+"\n"
+"Nieprawidłowa waluta!\n"
+
+#~ msgid "IMF Special Drawing Rights"
+#~ msgstr "Specjalne prawa ciągnienia MFW"
+

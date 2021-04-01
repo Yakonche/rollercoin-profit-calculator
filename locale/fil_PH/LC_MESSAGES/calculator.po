@@ -1,4 +1,4 @@
-# Russian (Russia) translations for Rollercoin Profit Calculator.
+# Filipino (Philippines) translations for Rollercoin Profit Calculator.
 # Copyright (C) 2021 ORGANIZATION
 # This file is distributed under the same license as the Rollercoin Profit
 # Calculator project.
@@ -6,19 +6,80 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Rollercoin Profit Calculator 0.1.2\n"
+"Project-Id-Version: Rollercoin Profit Calculator 0.1.5\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-03-25 14:22+0000\n"
-"PO-Revision-Date: 2021-03-18 07:51+0100\n"
+"POT-Creation-Date: 2021-03-31 16:52+0200\n"
+"PO-Revision-Date: 2021-03-27 10:54+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru_RU\n"
-"Language-Team: ru_RU <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"Language: fil_PH\n"
+"Language-Team: fil_PH <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.8.0\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: calculator.py:30
+msgid ""
+"\n"
+" Enter your hashrate (TH/s) : "
+msgstr ""
+"\n"
+" Ipasok ang iyong hashrate (TH/s) : "
+
+#: calculator.py:48
+msgid " Enter the {} network power (EH/s) : "
+msgstr " Ipasok ang {} lakas ng network (EH/s) : "
+
+#: calculator.py:55
+msgid " Enter the {} reward [default - {}] : "
+msgstr " Ipasok ang gantimpala {} [default - {}] : "
+
+#: calculator.py:83
+msgid ""
+" {} is the most profitable cryptocurrency to mine.\n"
+" {:.2f} {} of income per block.\n"
+" Or {} {} per block.\n"
+msgstr ""
+" Ang {} ay ang pinaka-kumikitang cryptocurrency na minahan.\n"
+" {:.2f} {} ng kita bawat bloke.\n"
+" O {} {} bawat bloke.\n"
+
+#: calculator.py:90
+msgid "hour"
+msgstr "oras"
+
+#: calculator.py:90
+msgid "day"
+msgstr "araw"
+
+#: calculator.py:90
+msgid "week"
+msgstr "linggo"
+
+#: calculator.py:90
+msgid "month"
+msgstr "buwan"
+
+#: calculator.py:90
+msgid "year"
+msgstr "taon"
+
+#: calculator.py:94
+msgid " This is around :"
+msgstr " Ito ay nasa paligid :"
+
+#: calculator.py:98
+msgid " {:.2f} {} per {}, or {} {}"
+msgstr " {:.2f} {} bawat {}, o {} {}"
+
+#: calculator.py:110
+msgid ""
+"\n"
+" Press the Enter key to close the window. "
+msgstr ""
+"\n"
+" Pindutin ang Enter key upang isara ang window. "
 
 #: data.py:6
 msgid "Australian Dollar"
@@ -38,15 +99,15 @@ msgstr ""
 
 #: data.py:10
 msgid "United States Dollar"
-msgstr ""
+msgstr "Dolyar ng Estados Unidos"
 
 #: data.py:11
 msgid "Argentine Peso"
-msgstr ""
+msgstr "Peso ng Argentina"
 
 #: data.py:12
 msgid "Mexican Peso"
-msgstr ""
+msgstr "Peso ng Mexico"
 
 #: data.py:13
 msgid "Venezuelan Bolivar Fuerte"
@@ -54,11 +115,11 @@ msgstr ""
 
 #: data.py:14
 msgid "Brazil Real"
-msgstr ""
+msgstr "Totoong Brazil"
 
 #: data.py:15
 msgid "Philippine Peso"
-msgstr ""
+msgstr "Peso ng Pilipinas"
 
 #: data.py:16
 msgid "Russian Ruble"
@@ -66,7 +127,7 @@ msgstr ""
 
 #: data.py:17
 msgid "Swiss Franc"
-msgstr ""
+msgstr "Swiss franc"
 
 #: data.py:18
 msgid "Polish Zloty"
@@ -102,11 +163,11 @@ msgstr ""
 
 #: data.py:26
 msgid "South Korean Won"
-msgstr ""
+msgstr "Nanalong South Korea"
 
 #: data.py:27
 msgid "Japanese Yen"
-msgstr ""
+msgstr "Perang hapon"
 
 #: data.py:28
 msgid "Chinese Yuan"
@@ -114,11 +175,11 @@ msgstr ""
 
 #: data.py:29
 msgid "Indian Rupee"
-msgstr ""
+msgstr "Rupee ng India"
 
 #: data.py:30
 msgid "South African Rand"
-msgstr ""
+msgstr "Rand ng South Africa"
 
 #: data.py:31
 msgid "Saudi Riyal"
@@ -142,162 +203,96 @@ msgstr ""
 
 #: data.py:36
 msgid "Swedish Krona"
-msgstr ""
+msgstr "Suweko Krona"
 
 #: data.py:37
 msgid "Ukrainian Hryvnia"
 msgstr ""
 
 #: data.py:38
-msgid "IMF Special Drawing Rights"
-msgstr ""
-
-#: data.py:39
 msgid "Czech Koruna"
 msgstr ""
 
-#: data.py:40
+#: data.py:39
 msgid "Hungarian Forint"
 msgstr ""
 
-#: data.py:41
+#: data.py:40
 msgid "Sri Lankan Rupee"
 msgstr ""
 
-#: data.py:42
+#: data.py:41
 msgid "Pakistani Rupee"
 msgstr ""
 
-#: data.py:43
+#: data.py:42
 msgid "Bangladeshi Taka"
 msgstr ""
 
-#: data.py:44
+#: data.py:43
 msgid "Israeli New Shekel"
 msgstr ""
 
-#: data.py:45
+#: data.py:44
 msgid "Norwegian Krone"
 msgstr ""
 
-#: data.py:46
+#: data.py:45
 msgid "Vietnamese đồng"
 msgstr ""
 
-#: data.py:47
+#: data.py:46
 msgid "Indonesian Rupiah"
 msgstr ""
 
-#: data.py:48
+#: data.py:47
 msgid "New Taiwan Dollar"
-msgstr ""
+msgstr "Bagong Dolyar ng Taiwan"
 
-#: data.py:49
+#: data.py:48
 msgid "Kuwaiti Dinar"
 msgstr ""
 
-#: data.py:50
+#: data.py:49
 msgid "Bahraini Dinar"
 msgstr ""
 
-#: locales.py:65
+#: locales.py:67
 msgid ""
 "\n"
 "Fiat currencies :"
 msgstr ""
+"\n"
+"Fiat pera :"
 
-#: locales.py:68 locales.py:92
+#: locales.py:70 locales.py:94
 msgid "{}: {} ({})"
 msgstr ""
 
-#: locales.py:89
+#: locales.py:91
 msgid ""
 "\n"
 "Crypto currencies :"
 msgstr ""
+"\n"
+"Mga pera sa Crypto :"
 
-#: locales.py:108
+#: locales.py:110
 msgid ""
 "\n"
 "Select a currency [default - USD] : "
 msgstr ""
+"\n"
+"Pumili ng pera [default - USD] : "
 
-#: locales.py:114
+#: locales.py:116
 msgid ""
 "\n"
 "Invalid currency!\n"
 msgstr ""
-
-#: rc_profit_calc.py:30
-msgid ""
 "\n"
-" Enter your hashrate (TH/s) : "
-msgstr ""
-"\n"
-" Введите свой хешрейт (TH/s) : "
+"Di-wastong pera!\n"
 
-#: rc_profit_calc.py:48
-msgid " Enter the {} network power (EH/s) : "
-msgstr " Введите мощность сети {} (EH/s) : "
-
-#: rc_profit_calc.py:55
-msgid " Enter the {} reward [default - {}] : "
-msgstr " Введите вознаграждение [дефолт - {}] : "
-
-#: rc_profit_calc.py:83
-msgid ""
-" {} is the most profitable cryptocurrency to mine.\n"
-" {:.2f} {} of income per block.\n"
-" Or {} {} per block.\n"
-msgstr ""
-" {} - самая прибыльная криптовалюта для майнинга.\n"
-" {:.2f} {} дохода с блока.\n"
-" Или {} {} за блок.\n"
-
-#: rc_profit_calc.py:90
-msgid "hour"
-msgstr "час"
-
-#: rc_profit_calc.py:90
-msgid "day"
-msgstr "день"
-
-#: rc_profit_calc.py:90
-msgid "week"
-msgstr "неделю"
-
-#: rc_profit_calc.py:90
-msgid "month"
-msgstr "месяц"
-
-#: rc_profit_calc.py:90
-msgid "year"
-msgstr "год"
-
-#: rc_profit_calc.py:94
-msgid " This is around :"
-msgstr " Это примерно :"
-
-#: rc_profit_calc.py:98
-msgid " {:.2f} {} per {}, or {} {}"
-msgstr " {:.2f} {} в {}, или {} {}"
-
-#: rc_profit_calc.py:110
-msgid ""
-"\n"
-" Press the Enter key to close the window. "
-msgstr ""
-
-#~ msgid "usd"
-#~ msgstr "rub"
-
-#~ msgid "$"
-#~ msgstr "₽"
-
-#~ msgid ""
-#~ "\n"
-#~ " Press the Enter key to close the window. "
+#~ msgid "IMF Special Drawing Rights"
 #~ msgstr ""
-#~ "\n"
-#~ " Нажмите клавишу Enter, чтобы закрыть окно. "
 

@@ -1,0 +1,299 @@
+# Russian (Russia) translations for Rollercoin Profit Calculator.
+# Copyright (C) 2021 ORGANIZATION
+# This file is distributed under the same license as the Rollercoin Profit
+# Calculator project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Rollercoin Profit Calculator 0.1.5\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2021-03-31 16:52+0200\n"
+"PO-Revision-Date: 2021-03-27 10:54+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru_RU\n"
+"Language-Team: ru_RU <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: calculator.py:30
+msgid ""
+"\n"
+" Enter your hashrate (TH/s) : "
+msgstr ""
+"\n"
+" Введите свой хешрейт (TH/s) : "
+
+#: calculator.py:48
+msgid " Enter the {} network power (EH/s) : "
+msgstr " Введите мощность сети {} (EH/s) : "
+
+#: calculator.py:55
+msgid " Enter the {} reward [default - {}] : "
+msgstr " Введите награду {} [дефолт - {}] : "
+
+#: calculator.py:83
+msgid ""
+" {} is the most profitable cryptocurrency to mine.\n"
+" {:.2f} {} of income per block.\n"
+" Or {} {} per block.\n"
+msgstr ""
+" {} - самая прибыльная криптовалюта для майнинга.\n"
+" {:.2f} {} дохода на блок.\n"
+" Или {} {} на блок.\n"
+
+#: calculator.py:90
+msgid "hour"
+msgstr "час"
+
+#: calculator.py:90
+msgid "day"
+msgstr "день"
+
+#: calculator.py:90
+msgid "week"
+msgstr "неделя"
+
+#: calculator.py:90
+msgid "month"
+msgstr "месяц"
+
+#: calculator.py:90
+msgid "year"
+msgstr "год"
+
+#: calculator.py:94
+msgid " This is around :"
+msgstr " Это около :"
+
+#: calculator.py:98
+msgid " {:.2f} {} per {}, or {} {}"
+msgstr " {:.2f} {} на {}, или же {} {}"
+
+#: calculator.py:110
+msgid ""
+"\n"
+" Press the Enter key to close the window. "
+msgstr ""
+"\n"
+" Нажмите клавишу Enter, чтобы закрыть окно. "
+
+#: data.py:6
+msgid "Australian Dollar"
+msgstr "Австралийский доллар"
+
+#: data.py:7
+msgid "Canadian Dollar"
+msgstr "Канадский доллар"
+
+#: data.py:8
+msgid "British Pound Sterling"
+msgstr "Британский фунт стерлингов"
+
+#: data.py:9
+msgid "New Zealand Dollar"
+msgstr "Новозеландский доллар"
+
+#: data.py:10
+msgid "United States Dollar"
+msgstr "Доллар США"
+
+#: data.py:11
+msgid "Argentine Peso"
+msgstr "Аргентинское песо"
+
+#: data.py:12
+msgid "Mexican Peso"
+msgstr "Мексиканский песо"
+
+#: data.py:13
+msgid "Venezuelan Bolivar Fuerte"
+msgstr "Венесуэльский Боливар Фуэрте"
+
+#: data.py:14
+msgid "Brazil Real"
+msgstr "Бразильский реал"
+
+#: data.py:15
+msgid "Philippine Peso"
+msgstr "Филиппинское песо"
+
+#: data.py:16
+msgid "Russian Ruble"
+msgstr "Русский рубль"
+
+#: data.py:17
+msgid "Swiss Franc"
+msgstr "Швейцарский франк"
+
+#: data.py:18
+msgid "Polish Zloty"
+msgstr "Польский злотый"
+
+#: data.py:19
+msgid "Turkish Lira"
+msgstr "Турецкая лира"
+
+#: data.py:20
+msgid "Euro"
+msgstr "Евро"
+
+#: data.py:21
+msgid "Nigerian Naira"
+msgstr "Нигерийская найра"
+
+#: data.py:22
+msgid "Singapore Dollar"
+msgstr "Сингапурский доллар"
+
+#: data.py:23
+msgid "Danish Krone"
+msgstr "Датская крона"
+
+#: data.py:24
+msgid "Burmese Kyat"
+msgstr "Бирманский кьят"
+
+#: data.py:25
+msgid "Thai Baht"
+msgstr "Тайский бат"
+
+#: data.py:26
+msgid "South Korean Won"
+msgstr "Южнокорейский вон"
+
+#: data.py:27
+msgid "Japanese Yen"
+msgstr "Японская иена"
+
+#: data.py:28
+msgid "Chinese Yuan"
+msgstr "Китайский юань"
+
+#: data.py:29
+msgid "Indian Rupee"
+msgstr "Индийская рупия"
+
+#: data.py:30
+msgid "South African Rand"
+msgstr "Южноафриканский рэнд"
+
+#: data.py:31
+msgid "Saudi Riyal"
+msgstr "Саудовский Риал"
+
+#: data.py:32
+msgid "Bermudian Dollar"
+msgstr "Бермудский доллар"
+
+#: data.py:33
+msgid "Chilean Peso"
+msgstr "Чилийское песо"
+
+#: data.py:34
+msgid "Hong Kong Dollar"
+msgstr "Гонконгский доллар"
+
+#: data.py:35
+msgid "Malaysian Ringgit"
+msgstr "Малайзийский ринггит"
+
+#: data.py:36
+msgid "Swedish Krona"
+msgstr "Шведская крона"
+
+#: data.py:37
+msgid "Ukrainian Hryvnia"
+msgstr "Украинская гривна"
+
+#: data.py:38
+msgid "Czech Koruna"
+msgstr "Чешская крона"
+
+#: data.py:39
+msgid "Hungarian Forint"
+msgstr "Венгерский форинт"
+
+#: data.py:40
+msgid "Sri Lankan Rupee"
+msgstr "Шри-ланкийская рупия"
+
+#: data.py:41
+msgid "Pakistani Rupee"
+msgstr "Пакистанская рупия"
+
+#: data.py:42
+msgid "Bangladeshi Taka"
+msgstr "Бангладешская така"
+
+#: data.py:43
+msgid "Israeli New Shekel"
+msgstr "Новый израильский шекель"
+
+#: data.py:44
+msgid "Norwegian Krone"
+msgstr "Норвежская крона"
+
+#: data.py:45
+msgid "Vietnamese đồng"
+msgstr "Вьетнамский đồng"
+
+#: data.py:46
+msgid "Indonesian Rupiah"
+msgstr "Индонезийская рупия"
+
+#: data.py:47
+msgid "New Taiwan Dollar"
+msgstr "Новый тайваньский доллар"
+
+#: data.py:48
+msgid "Kuwaiti Dinar"
+msgstr "Кувейтский динар"
+
+#: data.py:49
+msgid "Bahraini Dinar"
+msgstr "Бахрейнский динар"
+
+#: locales.py:67
+msgid ""
+"\n"
+"Fiat currencies :"
+msgstr ""
+"\n"
+"Фиатные валюты :"
+
+#: locales.py:70 locales.py:94
+msgid "{}: {} ({})"
+msgstr ""
+
+#: locales.py:91
+msgid ""
+"\n"
+"Crypto currencies :"
+msgstr ""
+"\n"
+"Криптовалюты :"
+
+#: locales.py:110
+msgid ""
+"\n"
+"Select a currency [default - USD] : "
+msgstr ""
+"\n"
+"Выберите валюту [дефолт - USD] : "
+
+#: locales.py:116
+msgid ""
+"\n"
+"Invalid currency!\n"
+msgstr ""
+"\n"
+"Неверная валюта !\n"
+
+#~ msgid "IMF Special Drawing Rights"
+#~ msgstr "Специальные права заимствования МВФ"
+

@@ -1,0 +1,298 @@
+# Turkish (Turkey) translations for Rollercoin Profit Calculator.
+# Copyright (C) 2021 ORGANIZATION
+# This file is distributed under the same license as the Rollercoin Profit
+# Calculator project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Rollercoin Profit Calculator 0.1.5\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2021-03-31 16:52+0200\n"
+"PO-Revision-Date: 2021-03-27 10:54+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: tr_TR\n"
+"Language-Team: tr_TR <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: calculator.py:30
+msgid ""
+"\n"
+" Enter your hashrate (TH/s) : "
+msgstr ""
+"\n"
+" Karma oranınızı girin (TH/s) : "
+
+#: calculator.py:48
+msgid " Enter the {} network power (EH/s) : "
+msgstr " {} ağ gücünü girin (EH/s) : "
+
+#: calculator.py:55
+msgid " Enter the {} reward [default - {}] : "
+msgstr " {} girin [varsayılan - {}] : "
+
+#: calculator.py:83
+msgid ""
+" {} is the most profitable cryptocurrency to mine.\n"
+" {:.2f} {} of income per block.\n"
+" Or {} {} per block.\n"
+msgstr ""
+" {} benim için en karlı kripto para birimidir.\n"
+" {:.2f} {} blok başına gelir.\n"
+" Veya blok başına {} {}.\n"
+
+#: calculator.py:90
+msgid "hour"
+msgstr "saat"
+
+#: calculator.py:90
+msgid "day"
+msgstr "gün"
+
+#: calculator.py:90
+msgid "week"
+msgstr "hafta"
+
+#: calculator.py:90
+msgid "month"
+msgstr "ay"
+
+#: calculator.py:90
+msgid "year"
+msgstr "yıl"
+
+#: calculator.py:94
+msgid " This is around :"
+msgstr " Bu etrafta :"
+
+#: calculator.py:98
+msgid " {:.2f} {} per {}, or {} {}"
+msgstr " {:.2f} {} başına {}, veya {} {}"
+
+#: calculator.py:110
+msgid ""
+"\n"
+" Press the Enter key to close the window. "
+msgstr ""
+"\n"
+" Pencereyi kapatmak için Enter tuşuna basın. "
+
+#: data.py:6
+msgid "Australian Dollar"
+msgstr "Avustralya doları"
+
+#: data.py:7
+msgid "Canadian Dollar"
+msgstr "Kanada Doları"
+
+#: data.py:8
+msgid "British Pound Sterling"
+msgstr "İngiliz Sterlini"
+
+#: data.py:9
+msgid "New Zealand Dollar"
+msgstr "Yeni Zellanda Doları"
+
+#: data.py:10
+msgid "United States Dollar"
+msgstr "Amerikan Doları"
+
+#: data.py:11
+msgid "Argentine Peso"
+msgstr "Arjantin Pesosu"
+
+#: data.py:12
+msgid "Mexican Peso"
+msgstr "Meksika Pezosu"
+
+#: data.py:13
+msgid "Venezuelan Bolivar Fuerte"
+msgstr ""
+
+#: data.py:14
+msgid "Brazil Real"
+msgstr "Brezilya Reali"
+
+#: data.py:15
+msgid "Philippine Peso"
+msgstr "Filipin Pezosu"
+
+#: data.py:16
+msgid "Russian Ruble"
+msgstr "Rus Rublesi"
+
+#: data.py:17
+msgid "Swiss Franc"
+msgstr "İsviçre Frangı"
+
+#: data.py:18
+msgid "Polish Zloty"
+msgstr "Polonya Zlotisi"
+
+#: data.py:19
+msgid "Turkish Lira"
+msgstr "Türk Lirası"
+
+#: data.py:20
+msgid "Euro"
+msgstr ""
+
+#: data.py:21
+msgid "Nigerian Naira"
+msgstr "Nijeryalı Naira"
+
+#: data.py:22
+msgid "Singapore Dollar"
+msgstr "Singapur doları"
+
+#: data.py:23
+msgid "Danish Krone"
+msgstr "Danimarka Kronu"
+
+#: data.py:24
+msgid "Burmese Kyat"
+msgstr "Burma Kyatı"
+
+#: data.py:25
+msgid "Thai Baht"
+msgstr "Tayland Bahtı"
+
+#: data.py:26
+msgid "South Korean Won"
+msgstr "Güney Kore Wonu"
+
+#: data.py:27
+msgid "Japanese Yen"
+msgstr "Japon Yeni"
+
+#: data.py:28
+msgid "Chinese Yuan"
+msgstr "Çin Yuanı"
+
+#: data.py:29
+msgid "Indian Rupee"
+msgstr "Hint rupisi"
+
+#: data.py:30
+msgid "South African Rand"
+msgstr "Güney Afrika Randı"
+
+#: data.py:31
+msgid "Saudi Riyal"
+msgstr "Suudi Riyali"
+
+#: data.py:32
+msgid "Bermudian Dollar"
+msgstr "Bermudian Doları"
+
+#: data.py:33
+msgid "Chilean Peso"
+msgstr "Şili Pesosu"
+
+#: data.py:34
+msgid "Hong Kong Dollar"
+msgstr "Hong Kong Doları"
+
+#: data.py:35
+msgid "Malaysian Ringgit"
+msgstr "Malezya Ringiti"
+
+#: data.py:36
+msgid "Swedish Krona"
+msgstr "İsveç Kronu"
+
+#: data.py:37
+msgid "Ukrainian Hryvnia"
+msgstr "Ukrayna Grivnası"
+
+#: data.py:38
+msgid "Czech Koruna"
+msgstr "Çek Korunası"
+
+#: data.py:39
+msgid "Hungarian Forint"
+msgstr "Macar Forinti"
+
+#: data.py:40
+msgid "Sri Lankan Rupee"
+msgstr "Sri Lanka Rupisi"
+
+#: data.py:41
+msgid "Pakistani Rupee"
+msgstr "Pakistan Rupisi"
+
+#: data.py:42
+msgid "Bangladeshi Taka"
+msgstr "Bangladeşli Taka"
+
+#: data.py:43
+msgid "Israeli New Shekel"
+msgstr "İsrail Yeni Şekeli"
+
+#: data.py:44
+msgid "Norwegian Krone"
+msgstr "Norveç Kronu"
+
+#: data.py:45
+msgid "Vietnamese đồng"
+msgstr "Vietnamca đồng"
+
+#: data.py:46
+msgid "Indonesian Rupiah"
+msgstr "Endonezya Rupiahı"
+
+#: data.py:47
+msgid "New Taiwan Dollar"
+msgstr "Yeni Tayvan Doları"
+
+#: data.py:48
+msgid "Kuwaiti Dinar"
+msgstr "Küveyt Dinarı"
+
+#: data.py:49
+msgid "Bahraini Dinar"
+msgstr "Bahreyn Dinarı"
+
+#: locales.py:67
+msgid ""
+"\n"
+"Fiat currencies :"
+msgstr ""
+"\n"
+"Fiat para birimleri :"
+
+#: locales.py:70 locales.py:94
+msgid "{}: {} ({})"
+msgstr ""
+
+#: locales.py:91
+msgid ""
+"\n"
+"Crypto currencies :"
+msgstr ""
+"\n"
+"Kripto para birimleri :"
+
+#: locales.py:110
+msgid ""
+"\n"
+"Select a currency [default - USD] : "
+msgstr ""
+"\n"
+"Bir para birimi seçin [varsayılan - USD] : "
+
+#: locales.py:116
+msgid ""
+"\n"
+"Invalid currency!\n"
+msgstr ""
+"\n"
+"Geçersiz para birimi !\n"
+
+#~ msgid "IMF Special Drawing Rights"
+#~ msgstr "IMF Özel Çekme Hakları"
+

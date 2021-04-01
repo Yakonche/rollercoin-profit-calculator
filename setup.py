@@ -31,9 +31,9 @@ class InitAll(CommandAdapter):
             babel_ic.initialize_options()
 
             babel_ic.locale = catalog
-            babel_ic.input_file = "locale/rc_profit_calc.pot"
+            babel_ic.input_file = "locale/calculator.pot"
             babel_ic.output_dir = "locale"
-            babel_ic.output_file = "locale/{}/LC_MESSAGES/rc_profit_calc.po".format(catalog)
+            babel_ic.output_file = "locale/{}/LC_MESSAGES/calculator.po".format(catalog)
 
             babel_ic.finalize_options()
             babel_ic.run()
@@ -48,9 +48,9 @@ class UpdateAll(CommandAdapter):
             babel_uc.initialize_options()
 
             babel_uc.locale = catalog
-            babel_uc.input_file = "locale/rc_profit_calc.pot"
+            babel_uc.input_file = "locale/calculator.pot"
             babel_uc.output_dir = "locale"
-            babel_uc.output_file = "locale/{}/LC_MESSAGES/rc_profit_calc.po".format(catalog)
+            babel_uc.output_file = "locale/{}/LC_MESSAGES/calculator.po".format(catalog)
 
             babel_uc.finalize_options()
             babel_uc.run()
@@ -61,7 +61,7 @@ class CompileAll(CommandAdapter):
 
     def run(self):
         babel_cc = babel.compile_catalog(self.distribution)
-        babel_cc.domain = ["rc_profit_calc"]
+        babel_cc.domain = ["calculator"]
         babel_cc.directory = "./locale"
         babel_cc.run()
 
@@ -69,7 +69,7 @@ class CompileAll(CommandAdapter):
 class BuildWithCompile(build):
     def run(self):
         babel_cc = babel.compile_catalog(self.distribution)
-        babel_cc.domain = ["rc_profit_calc"]
+        babel_cc.domain = ["calculator"]
         babel_cc.directory = "./locale"
         babel_cc.run()
         super().run()
@@ -83,7 +83,7 @@ class ExtractMessages(CommandAdapter):
         babel_em.initialize_options()
 
         babel_em.input_dirs = "."
-        babel_em.output_file = "locale/rc_profit_calc.pot"
+        babel_em.output_file = "locale/calculator.pot"
 
         babel_em.finalize_options()
         babel_em.run()
@@ -101,7 +101,7 @@ def list_mo_files(folder, domain):
 SRC_PATH = os.path.dirname(__file__)
 
 include_files = []
-for mo_file in list_mo_files("locale", "rc_profit_calc"):
+for mo_file in list_mo_files("locale", "calculator"):
     include_files.append(
         (os.path.join(SRC_PATH, mo_file), mo_file),
     )
@@ -109,7 +109,7 @@ for mo_file in list_mo_files("locale", "rc_profit_calc"):
 target_name = "Rollercoin Profit Calculator.exe" if WIN_NT else "rollercoin-profit-calculator"
 executables = [
     Executable(
-        "rc_profit_calc.py",
+        "calculator.py",
         base=None,
         targetName=target_name,
         icon="icon.ico"
@@ -127,7 +127,7 @@ options = {
 setup(
     options=options,
     name="Rollercoin Profit Calculator",
-    version="0.1.2",
+    version="0.1.5",
     description="Calculator that allows you to determine which cryptocurrency"
                 " is the most profitable to mine on the rollercoin.com site, "
                 "with an estimate by block, hour, day, month, year. 45 fiat "
