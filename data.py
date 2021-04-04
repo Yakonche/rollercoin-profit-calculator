@@ -22,13 +22,13 @@ currencies_fiat = [
     {"code": "SGD", "name": _("Singapore Dollar")          , "sym": "S$"  },
     {"code": "DKK", "name": _("Danish Krone")              , "sym": "kr." },
     {"code": "MMK", "name": _("Burmese Kyat")              , "sym": "K"   },
-    {"code": "THB", "name": _("Thai Baht")                 , "sym": "฿"   },
+    {"code": "THB", "name": _("Thai Baht")                 , "sym": "฿"    },
     {"code": "KRW", "name": _("South Korean Won")          , "sym": "₩"   },
     {"code": "JPY", "name": _("Japanese Yen")              , "sym": "¥"   },
     {"code": "CNY", "name": _("Chinese Yuan")              , "sym": "¥"   },
     {"code": "INR", "name": _("Indian Rupee")              , "sym": "₹"   },
     {"code": "ZAR", "name": _("South African Rand")        , "sym": "R"   },
-    {"code": "SAR", "name": _("Saudi Riyal")               , "sym": "﷼"   },
+    {"code": "SAR", "name": _("Saudi Riyal")               , "sym": "SAR" },
     {"code": "BMD", "name": _("Bermudian Dollar")          , "sym": "$"   },
     {"code": "CLP", "name": _("Chilean Peso")              , "sym": "$"   },
     {"code": "HKD", "name": _("Hong Kong Dollar")          , "sym": "元"  },
@@ -37,16 +37,16 @@ currencies_fiat = [
     {"code": "UAH", "name": _("Ukrainian Hryvnia")         , "sym": "₴"   },
     {"code": "CZK", "name": _("Czech Koruna")              , "sym": "Kč"  },
     {"code": "HUF", "name": _("Hungarian Forint")          , "sym": "Ft"  },
-    {"code": "LKR", "name": _("Sri Lankan Rupee")          , "sym": "ூ" },
-    {"code": "PKR", "name": _("Pakistani Rupee")           , "sym": "₨"   },
+    {"code": "LKR", "name": _("Sri Lankan Rupee")          , "sym": "ூ"  },
+    {"code": "PKR", "name": _("Pakistani Rupee")           , "sym": "₨"  },
     {"code": "BDT", "name": _("Bangladeshi Taka")          , "sym": "৳"   },
     {"code": "ILS", "name": _("Israeli New Shekel")        , "sym": "₪"   },
     {"code": "NOK", "name": _("Norwegian Krone")           , "sym": "kr"  },
     {"code": "VND", "name": _("Vietnamese đồng")           , "sym": "₫/đ" },
     {"code": "IDR", "name": _("Indonesian Rupiah")         , "sym": "Rp"  },
     {"code": "TWD", "name": _("New Taiwan Dollar")         , "sym": "圓"  },
-    {"code": "KWD", "name": _("Kuwaiti Dinar")             , "sym": "د.ك" },
-    {"code": "BHD", "name": _("Bahraini Dinar")            , "sym": ".د.ب"}
+    {"code": "KWD", "name": _("Kuwaiti Dinar")             , "sym": "KD"  },
+    {"code": "BHD", "name": _("Bahraini Dinar")            , "sym": "BD"  }
 ]
 
 currencies_crypto = [
