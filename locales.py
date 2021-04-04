@@ -61,59 +61,49 @@ def get_currency():
 
     # Valid options, a list of every country code, pulled from the dicts
     options = [curr['code'] for curr in currencies_crypto + currencies_fiat]
-
+#British Pound Sterling (£)
     # Spin until user picks a valid option
     while True:
         print(_(" Fiat currencies :"))
-        print( ┌────────┬───────────────────────────┬───────┬────────┬────────
-        ────────────────────┬───────┐)
-        print(_( │  code  │ name                      │symbol │  code  │ name
-                            │symbol │))
-        print( ├────────┴───────────────────────────┴───────┼────────┴────────
-        ────────────────────┴───────┤)
+        print(" ┌────────┬───────────────────────────┬───────┬────────┬───────────────────────────┬───────┐")
+        print(_(" │  code  │ name                      │symbol │  code  │ name                      │symbol │"))
+        print(" ├────────┴───────────────────────────┴───────┼────────┴───────────────────────────┴───────┤")
         for idx, curr in enumerate(currencies_fiat):
-            cell_str = [_("| - {}  : "), _("{}"), _("({})")].format(
-                curr['code'], curr['name'], curr['sym']
-            )
-            # Quantity of spaces required to fill the remainder of the cell.
-            # Each cell is half the console width. Padding is added to the end
-            # such that the next cell's first char will be aligned
-            cell_padding = int(
-                console_width / 2 - len_display(cell_str.strip())
+            cell_str = _(" | - {} : {}  {}").format(
+                curr['code'].ljust(4, " "),
+                curr['name'].ljust(26, " "),
+                curr['sym'].ljust(5 if len_display(curr['sym']) == len(curr['sym']) else 4, " ")
             )
 
-            # Output the cell contents + the required padding, end="" removes
-            # the newline from print, unless this is the last cell
-            print(
-                cell_str.strip() + (" " * cell_padding),
-                end="" if idx != len(currencies_fiat) - 1 else "\n"
-            )
+            # Output the cell contents, end="" removes the newline from print
+            print(cell_str, end="")
             # Add a newline only every second iteration because we have two
             # cells per row
             if idx % 2:
-                print()  # \n
+                print(" |")  # \n
+        if not idx % 2:
+            print(" |                                            |")
+        print(" └────────────────────────────────────────────┴────────────────────────────────────────────┘")
 
         print(_(" Crypto currencies :"))
-        print( ┌────────┬───────────────────────────┬───────┬────────┬────────
-        ────────────────────┬───────┐)
-        print(_( │  code  │ name                      │symbol │  code  │ name
-                            │symbol │))
-        print( ├────────┴───────────────────────────┴───────┼────────┴────────
-        ────────────────────┴───────┤)
+        print(" ┌────────┬───────────────────────────┬───────┬────────┬───────────────────────────┬───────┐")
+        print(_(" │  code  │ name                      │symbol │  code  │ name                      │symbol │"))
+        print(" ├────────┴───────────────────────────┴───────┼────────┴───────────────────────────┴───────┤")
         for idx, curr in enumerate(currencies_crypto):
-            cell_str = [_("| - {}  : "), _("{}"), _("({})")].format(
-                curr['code'].ljust(4, " "), curr['name'], curr['sym']
-            )
-            cell_padding = int(
-                console_width / 2 - len_display(cell_str.strip())
+            cell_str = _(" | - {} : {}  {}").format(
+                curr['code'].ljust(4, " "),
+                curr['name'].ljust(26, " "),
+                curr['sym'].ljust(5, " ")
             )
 
             print(
-                cell_str.strip() + (" " * cell_padding),
-                end="" if idx != len(currencies_crypto) - 1 else "\n"
+                cell_str, end=""
             )
             if idx % 2:
-                print()  # \n
+                print(" |")  # \n
+        if not idx % 2:
+            print(" |                                            |")
+        print(" └────────────────────────────────────────────┴────────────────────────────────────────────┘")
 
         # As the user to select from the displayed lists
         selected_currency = input(
