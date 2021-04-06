@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Rollercoin Profit Calculator 0.1.5\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-03-31 16:52+0200\n"
+"POT-Creation-Date: 2021-04-06 08:03+0200\n"
 "PO-Revision-Date: 2021-03-27 10:54+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en_US\n"
@@ -251,33 +251,58 @@ msgid "Bahraini Dinar"
 msgstr ""
 
 #: locales.py:67
-msgid ""
-"\n"
-"Fiat currencies :"
+msgid " Fiat currencies :"
 msgstr ""
 
-#: locales.py:70 locales.py:94
-msgid "{}: {} ({})"
+#: locales.py:69 locales.py:90
+msgid ""
+" │  code  │ name                      │symbol │  code  │ name"
+"                      │symbol │"
 msgstr ""
 
-#: locales.py:91
-msgid ""
-"\n"
-"Crypto currencies :"
+#: locales.py:72 locales.py:93
+msgid " | - {} : {}  {}"
+msgstr ""
+
+#: locales.py:88
+msgid " Crypto currencies :"
 msgstr ""
 
 #: locales.py:110
 msgid ""
 "\n"
-"Select a currency [default - USD] : "
+" Select a currency [default - USD] : "
 msgstr ""
 
 #: locales.py:116
 msgid ""
 "\n"
-"Invalid currency!\n"
+" Invalid currency!\n"
 msgstr ""
 
 #~ msgid "IMF Special Drawing Rights"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\n"
+#~ "Fiat currencies :"
+#~ msgstr ""
+
+#~ msgid "{}: {} ({})"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\n"
+#~ "Crypto currencies :"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\n"
+#~ "Select a currency [default - USD] : "
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\n"
+#~ "Invalid currency!\n"
 #~ msgstr ""
 

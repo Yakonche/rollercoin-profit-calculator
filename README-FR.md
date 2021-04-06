@@ -10,39 +10,12 @@
   <img alt="CodeFactor" src="https://www.codefactor.io/repository/github/yakonche/rollercoin-profit-calculator/badge?style=flat-square"/>
 </p>
 
-### READMES dans d'autres langues
-
-<p align="center">
-  <a href="https://github.com/Yakonche/rollercoin-profit-calculator/blob/master/readmes/README-DE.md">
-    <img alt="German" src="https://user-images.githubusercontent.com/60564904/111507817-56978680-874b-11eb-8fb2-c66eca9683ec.png">
-  </a>
-  <a href="https://github.com/Yakonche/rollercoin-profit-calculator/blob/master/readmes/README-ES.md">
-    <img alt="Spanish" src="https://user-images.githubusercontent.com/60564904/111508987-90b55800-874c-11eb-92ec-1d9fcbaf61b6.png">
-  </a>
-  <a href="https://github.com/Yakonche/rollercoin-profit-calculator/blob/master/README.md">
-    <img alt="English" src="https://user-images.githubusercontent.com/60564904/111509126-b3477100-874c-11eb-9d87-0f484dfa3ff6.png">
-  </a>
-  <a href="https://github.com/Yakonche/rollercoin-profit-calculator/blob/master/readmes/README-PH.md">
-    <img alt="Philippines" src="https://user-images.githubusercontent.com/60564904/111509315-e427a600-874c-11eb-8e73-88d67a15c139.png">
-  </a>
-  <a href="https://github.com/Yakonche/rollercoin-profit-calculator/blob/master/readmes/README-PL.md">
-    <img alt="Polish" src="https://user-images.githubusercontent.com/60564904/111509351-ee49a480-874c-11eb-9205-04cc7ed5eaaf.png">
-  </a>
-  <a href="https://github.com/Yakonche/rollercoin-profit-calculator/blob/master/readmes/README-PT.md">
-    <img alt="Portuguese" src="https://user-images.githubusercontent.com/60564904/111509380-f73a7600-874c-11eb-8a88-6663d90e0f7f.png">
-  </a>
-  <a href="https://github.com/Yakonche/rollercoin-profit-calculator/blob/master/readmes/README-RU.md">
-    <img alt="Russian" src="https://user-images.githubusercontent.com/60564904/111509415-002b4780-874d-11eb-99d3-f877f9744746.png">
-  </a>
-  <a href="https://github.com/Yakonche/rollercoin-profit-calculator/blob/master/readmes/README-TR.md">
-    <img alt="Turkish" src="https://user-images.githubusercontent.com/60564904/111509458-0ae5dc80-874d-11eb-81ae-3a4775e11df5.png">
-  </a>
-</p>
+[Lisez-moi en anglais](https://github.com/Yakonche/rollercoin-profit-calculator/blob/master/README.md)
 
 À propos
 --------
 
-Calculatrice qui vous permet de déterminer quelle crypto-monnaie est la plus rentable à «miner» sur le site rollercoin.com.
+Calculateur qui vous permet de déterminer quelle crypto-monnaie est la plus rentable à «miner» sur le site rollercoin.com.
 Ce calculateur donnera également une estimation du revenu à chaque heure / jour / semaine / mois / année, en fonction de la durée d'un bloc (environ 5 min).
 
 <p align="center"><img src="https://user-images.githubusercontent.com/60564904/111250612-ec2cfc00-860d-11eb-98f3-bc8beb837055.png"/></p>
@@ -50,10 +23,12 @@ Ce calculateur donnera également une estimation du revenu à chaque heure / jou
 Téléchargements
 ---------------
 
-[Version 0.1.2](https://github.com/Yakonche/rollercoin-profit-calculator/releases/tag/0.1.2)
+[Version 0.1.5](https://github.com/Yakonche/rollercoin-profit-calculator/releases/tag/0.1.5)
 
 <details>
 <summary>Anciennes versions</summary>
+
+* [Version 0.1.2](https://github.com/Yakonche/rollercoin-profit-calculator/releases/tag/0.1.2)
 * [Version 0.1.0](https://github.com/Yakonche/rollercoin-profit-calculator/releases/tag/0.1.0)
 * [Version 0.0.5](https://github.com/Yakonche/rollercoin-profit-calculator/releases/tag/0.0.5)
 </details>

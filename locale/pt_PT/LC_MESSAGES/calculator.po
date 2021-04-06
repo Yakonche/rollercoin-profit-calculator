@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Rollercoin Profit Calculator 0.1.5\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-03-31 16:52+0200\n"
+"POT-Creation-Date: 2021-04-06 08:03+0200\n"
 "PO-Revision-Date: 2021-03-27 10:54+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: pt_PT\n"
@@ -258,41 +258,43 @@ msgid "Bahraini Dinar"
 msgstr "Dinar do Bahrein"
 
 #: locales.py:67
-msgid ""
-"\n"
-"Fiat currencies :"
+#, fuzzy
+msgid " Fiat currencies :"
 msgstr ""
 "\n"
 "Moedas Fiat :"
 
-#: locales.py:70 locales.py:94
-msgid "{}: {} ({})"
+#: locales.py:69 locales.py:90
+msgid ""
+" │  code  │ name                      │symbol │  code  │ name"
+"                      │symbol │"
 msgstr ""
 
-#: locales.py:91
-msgid ""
-"\n"
-"Crypto currencies :"
+#: locales.py:72 locales.py:93
+msgid " | - {} : {}  {}"
+msgstr ""
+
+#: locales.py:88
+#, fuzzy
+msgid " Crypto currencies :"
 msgstr ""
 "\n"
 "Moedas criptográficas :"
 
 #: locales.py:110
+#, fuzzy
 msgid ""
 "\n"
-"Select a currency [default - USD] : "
+" Select a currency [default - USD] : "
 msgstr ""
 "\n"
 "Selecione uma moeda [padrão - USD] : "
 
 #: locales.py:116
+#, fuzzy
 msgid ""
 "\n"
-"Invalid currency!\n"
+" Invalid currency!\n"
 msgstr ""
 "\n"
 "Moeda inválida!\n"
-
-#~ msgid "IMF Special Drawing Rights"
-#~ msgstr "Direitos Especiais de Saque do FMI"
-
